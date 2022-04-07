@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "HnJQgZqm0r+28XXMKF0M4ypVUxBHS7EFZkOHj4DETA8d7Z2PETfrckDvI8EHN1P2mhexL8DF9l8Jez6MfAaW4w==",
+  "success": true,
+  "projectFilePath": "C:\\Учеба\\mod-lab05-gen\\ProjCharGenerator\\ProjCharGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\semsmirn\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\semsmirn\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\semsmirn\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\semsmirn\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

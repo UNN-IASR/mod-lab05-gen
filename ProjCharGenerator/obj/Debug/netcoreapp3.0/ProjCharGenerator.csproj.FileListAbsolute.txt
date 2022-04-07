@@ -1,0 +1,14 @@
+C:\Учеба\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.exe
+C:\Учеба\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.deps.json
+C:\Учеба\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.runtimeconfig.json
+C:\Учеба\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.runtimeconfig.dev.json
+C:\Учеба\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.dll
+C:\Учеба\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.pdb
+C:\Учеба\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Учеба\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.AssemblyInfoInputs.cache
+C:\Учеба\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.AssemblyInfo.cs
+C:\Учеба\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.csproj.CoreCompileInputs.cache
+C:\Учеба\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.dll
+C:\Учеба\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.pdb
+C:\Учеба\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.genruntimeconfig.cache
+C:\Учеба\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.csproj.AssemblyReference.cache
