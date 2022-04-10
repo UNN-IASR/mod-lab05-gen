@@ -1,0 +1,11 @@
+C:\Users\123\source\repos\ProjCharGenerator\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.exe
+C:\Users\123\source\repos\ProjCharGenerator\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.deps.json
+C:\Users\123\source\repos\ProjCharGenerator\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.runtimeconfig.json
+C:\Users\123\source\repos\ProjCharGenerator\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.runtimeconfig.dev.json
+C:\Users\123\source\repos\ProjCharGenerator\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.dll
+C:\Users\123\source\repos\ProjCharGenerator\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.pdb
+C:\Users\123\source\repos\ProjCharGenerator\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.csprojAssemblyReference.cache
+C:\Users\123\source\repos\ProjCharGenerator\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.AssemblyInfoInputs.cache
+C:\Users\123\source\repos\ProjCharGenerator\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.AssemblyInfo.cs
+C:\Users\123\source\repos\ProjCharGenerator\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.dll
+C:\Users\123\source\repos\ProjCharGenerator\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.pdb
