@@ -1,0 +1,13 @@
+/Users/nikolajoverin/Desktop/alinaoverina/my_projects/mod-lab00-training/mod-lab05-gen/ProjCharGenerator/bin/Debug/netcoreapp3.0/ProjCharGenerator.deps.json
+/Users/nikolajoverin/Desktop/alinaoverina/my_projects/mod-lab00-training/mod-lab05-gen/ProjCharGenerator/bin/Debug/netcoreapp3.0/ProjCharGenerator.dll
+/Users/nikolajoverin/Desktop/alinaoverina/my_projects/mod-lab00-training/mod-lab05-gen/ProjCharGenerator/bin/Debug/netcoreapp3.0/ProjCharGenerator.pdb
+/Users/nikolajoverin/Desktop/alinaoverina/my_projects/mod-lab00-training/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp3.0/ProjCharGenerator.csproj.AssemblyReference.cache
+/Users/nikolajoverin/Desktop/alinaoverina/my_projects/mod-lab00-training/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp3.0/ProjCharGenerator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nikolajoverin/Desktop/alinaoverina/my_projects/mod-lab00-training/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp3.0/ProjCharGenerator.AssemblyInfoInputs.cache
+/Users/nikolajoverin/Desktop/alinaoverina/my_projects/mod-lab00-training/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp3.0/ProjCharGenerator.AssemblyInfo.cs
+/Users/nikolajoverin/Desktop/alinaoverina/my_projects/mod-lab00-training/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp3.0/ProjCharGenerator.csproj.CoreCompileInputs.cache
+/Users/nikolajoverin/Desktop/alinaoverina/my_projects/mod-lab00-training/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp3.0/ProjCharGenerator.dll
+/Users/nikolajoverin/Desktop/alinaoverina/my_projects/mod-lab00-training/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp3.0/ProjCharGenerator.pdb
+/Users/nikolajoverin/Desktop/alinaoverina/my_projects/mod-lab00-training/mod-lab05-gen/ProjCharGenerator/bin/Debug/netcoreapp3.0/ProjCharGenerator.runtimeconfig.json
+/Users/nikolajoverin/Desktop/alinaoverina/my_projects/mod-lab00-training/mod-lab05-gen/ProjCharGenerator/bin/Debug/netcoreapp3.0/ProjCharGenerator.runtimeconfig.dev.json
+/Users/nikolajoverin/Desktop/alinaoverina/my_projects/mod-lab00-training/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp3.0/ProjCharGenerator.genruntimeconfig.cache
