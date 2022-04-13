@@ -1,0 +1,13 @@
+D:\универ\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.exe
+D:\универ\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.deps.json
+D:\универ\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.runtimeconfig.json
+D:\универ\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.runtimeconfig.dev.json
+D:\универ\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.dll
+D:\универ\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.pdb
+D:\универ\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.csprojAssemblyReference.cache
+D:\универ\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.AssemblyInfoInputs.cache
+D:\универ\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.AssemblyInfo.cs
+D:\универ\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.csproj.CoreCompileInputs.cache
+D:\универ\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.dll
+D:\универ\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.pdb
+D:\универ\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.genruntimeconfig.cache

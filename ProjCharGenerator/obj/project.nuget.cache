@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "UOYBfNPcxnk1fw7PbdGJCtD0mjLLllI6aI5zdmGGLPnjgQ3AlZ5I+dW4hyfJVHRCG2t3hguDXgEVHGCfXwiXZQ==",
+  "success": true,
+  "projectFilePath": "D:\\универ\\mod-lab05-gen\\ProjCharGenerator\\ProjCharGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alisa\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\alisa\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\alisa\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\alisa\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
