@@ -1,0 +1,14 @@
+C:\UNN\MIPS\Lab5\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.exe
+C:\UNN\MIPS\Lab5\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.deps.json
+C:\UNN\MIPS\Lab5\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.runtimeconfig.json
+C:\UNN\MIPS\Lab5\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.runtimeconfig.dev.json
+C:\UNN\MIPS\Lab5\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.dll
+C:\UNN\MIPS\Lab5\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.pdb
+C:\UNN\MIPS\Lab5\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.csproj.AssemblyReference.cache
+C:\UNN\MIPS\Lab5\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\UNN\MIPS\Lab5\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.AssemblyInfoInputs.cache
+C:\UNN\MIPS\Lab5\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.AssemblyInfo.cs
+C:\UNN\MIPS\Lab5\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.csproj.CoreCompileInputs.cache
+C:\UNN\MIPS\Lab5\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.dll
+C:\UNN\MIPS\Lab5\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.pdb
+C:\UNN\MIPS\Lab5\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.genruntimeconfig.cache
