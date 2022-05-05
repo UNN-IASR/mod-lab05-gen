@@ -1,0 +1,14 @@
+D:\CharGenerator\bin\Debug\netcoreapp3.1\CharGenerator.exe
+D:\CharGenerator\bin\Debug\netcoreapp3.1\CharGenerator.deps.json
+D:\CharGenerator\bin\Debug\netcoreapp3.1\CharGenerator.runtimeconfig.json
+D:\CharGenerator\bin\Debug\netcoreapp3.1\CharGenerator.runtimeconfig.dev.json
+D:\CharGenerator\bin\Debug\netcoreapp3.1\CharGenerator.dll
+D:\CharGenerator\bin\Debug\netcoreapp3.1\CharGenerator.pdb
+D:\CharGenerator\obj\Debug\netcoreapp3.1\CharGenerator.csproj.AssemblyReference.cache
+D:\CharGenerator\obj\Debug\netcoreapp3.1\CharGenerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\CharGenerator\obj\Debug\netcoreapp3.1\CharGenerator.AssemblyInfoInputs.cache
+D:\CharGenerator\obj\Debug\netcoreapp3.1\CharGenerator.AssemblyInfo.cs
+D:\CharGenerator\obj\Debug\netcoreapp3.1\CharGenerator.csproj.CoreCompileInputs.cache
+D:\CharGenerator\obj\Debug\netcoreapp3.1\CharGenerator.dll
+D:\CharGenerator\obj\Debug\netcoreapp3.1\CharGenerator.pdb
+D:\CharGenerator\obj\Debug\netcoreapp3.1\CharGenerator.genruntimeconfig.cache
