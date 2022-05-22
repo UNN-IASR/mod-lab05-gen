@@ -237,5 +237,3 @@ namespace generator
         }
     }
 }
-}
-}
