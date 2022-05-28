@@ -1,0 +1,14 @@
+C:\Users\timab\Desktop\Github\mod-lab05-gen-main\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.exe
+C:\Users\timab\Desktop\Github\mod-lab05-gen-main\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.deps.json
+C:\Users\timab\Desktop\Github\mod-lab05-gen-main\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.runtimeconfig.json
+C:\Users\timab\Desktop\Github\mod-lab05-gen-main\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.runtimeconfig.dev.json
+C:\Users\timab\Desktop\Github\mod-lab05-gen-main\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.dll
+C:\Users\timab\Desktop\Github\mod-lab05-gen-main\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.pdb
+C:\Users\timab\Desktop\Github\mod-lab05-gen-main\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.csproj.AssemblyReference.cache
+C:\Users\timab\Desktop\Github\mod-lab05-gen-main\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\timab\Desktop\Github\mod-lab05-gen-main\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.AssemblyInfoInputs.cache
+C:\Users\timab\Desktop\Github\mod-lab05-gen-main\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.AssemblyInfo.cs
+C:\Users\timab\Desktop\Github\mod-lab05-gen-main\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.csproj.CoreCompileInputs.cache
+C:\Users\timab\Desktop\Github\mod-lab05-gen-main\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.dll
+C:\Users\timab\Desktop\Github\mod-lab05-gen-main\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.pdb
+C:\Users\timab\Desktop\Github\mod-lab05-gen-main\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.genruntimeconfig.cache
