@@ -1,44 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace generator
 {
-    class CharGenerator 
-    {
-        private string syms = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя"; 
-        private char[] data;
-        private int size;
-        private Random random = new Random();
-        public CharGenerator() 
-        {
-           size = syms.Length;
-           data = syms.ToCharArray(); 
-        }
-        public char getSym() 
-        {
-           return data[random.Next(0, size)]; 
-        }
-    }
     class Program
     {
         static void Main(string[] args)
         {
-            CharGenerator gen = new CharGenerator();
-            SortedDictionary<char, int> stat = new SortedDictionary<char, int>();
-            for(int i = 0; i < 1000; i++) 
-            {
-               char ch = gen.getSym(); 
-               if (stat.ContainsKey(ch))
-                  stat[ch]++;
-               else
-                  stat.Add(ch, 1); Console.Write(ch);
-            }
-            Console.Write('\n');
-            foreach (KeyValuePair<char, int> entry in stat) 
-            {
-                 Console.WriteLine("{0} - {1}",entry.Key,entry.Value/1000.0); 
-            }
-            
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            int seq_len = 1000;
+            CharGeneratorTwoGramm gen_char = new CharGeneratorTwoGramm();
+            string output_char_gen = gen_char.generate(seq_len);
+            string char_gen_file_path = "char_gen_result.txt";
+            System.IO.File.WriteAllText(char_gen_file_path, output_char_gen);
+            WordGenOneGramm gen_onegramm = new WordGenOneGramm();
+            string output_onegramm_gen = gen_onegramm.generate(seq_len);
+            string gen_onegramm_file_path = "gen_onegramm_result.txt";
+            System.IO.File.WriteAllText(gen_onegramm_file_path, output_onegramm_gen);
+            WordGenOneGramm gen_twogramm = new WordGenOneGramm();
+            string output_twogramm_gen = gen_twogramm.generate(seq_len);
+            string gen_twogramm_file_path = "gen_twogramm_result.txt";
+            System.IO.File.WriteAllText(gen_twogramm_file_path, output_twogramm_gen);
         }
     }
 }
