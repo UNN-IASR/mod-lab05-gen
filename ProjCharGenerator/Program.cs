@@ -27,7 +27,7 @@ namespace generator
         private char[] data;
         private int size;
         private Random random = new Random();
-        public static string filePath = "D:\\projects\\МИПиС\\file.txt";
+        public static string filePath = "...\\file.txt";
         public int[,] Weights { get; set; }
         public CharGenerator1()
         {
