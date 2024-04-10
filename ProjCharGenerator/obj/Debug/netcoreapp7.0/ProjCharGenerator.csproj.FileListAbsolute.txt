@@ -1,0 +1,15 @@
+C:\Users\danil\Source\Repos\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp7.0\ProjCharGenerator.exe
+C:\Users\danil\Source\Repos\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp7.0\ProjCharGenerator.deps.json
+C:\Users\danil\Source\Repos\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp7.0\ProjCharGenerator.runtimeconfig.json
+C:\Users\danil\Source\Repos\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp7.0\ProjCharGenerator.dll
+C:\Users\danil\Source\Repos\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp7.0\ProjCharGenerator.pdb
+C:\Users\danil\Source\Repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp7.0\ProjCharGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danil\Source\Repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp7.0\ProjCharGenerator.AssemblyInfoInputs.cache
+C:\Users\danil\Source\Repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp7.0\ProjCharGenerator.AssemblyInfo.cs
+C:\Users\danil\Source\Repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp7.0\ProjCharGenerator.csproj.CoreCompileInputs.cache
+C:\Users\danil\Source\Repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp7.0\ProjCharGenerator.sourcelink.json
+C:\Users\danil\Source\Repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp7.0\ProjCharGenerator.dll
+C:\Users\danil\Source\Repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp7.0\refint\ProjCharGenerator.dll
+C:\Users\danil\Source\Repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp7.0\ProjCharGenerator.pdb
+C:\Users\danil\Source\Repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp7.0\ProjCharGenerator.genruntimeconfig.cache
+C:\Users\danil\Source\Repos\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp7.0\ref\ProjCharGenerator.dll
