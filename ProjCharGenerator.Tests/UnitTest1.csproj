@@ -2,7 +2,7 @@
 
   <PropertyGroup>
   <TargetFramework>netcoreapp7.0</TargetFramework>
-
+  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>   
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
