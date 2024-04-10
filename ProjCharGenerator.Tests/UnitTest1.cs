@@ -7,15 +7,6 @@ namespace UnitTest1
     [TestClass]
     public class UnitTest1
     {
-        //[TestMethod]
-        //public void TestFA1_01()
-        //{
-        //    String s = "01";
-        //    FA1 fa = new FA1();
-        //    bool? result = fa.Run(s);
-        //    Assert.AreEqual(true, result);
-        //}
-
         [TestMethod]
         public void Test1_1()
         {
@@ -47,7 +38,6 @@ namespace UnitTest1
         public void Test2_1()
         {
             CharGenerator_2 charGenerator_2 = new CharGenerator_2();
-            charGenerator_2.Slova();
             Assert.AreEqual(charGenerator_2.slova[0], "и");
         }
 
@@ -55,7 +45,6 @@ namespace UnitTest1
         public void Test2_2()
         {
             CharGenerator_2 charGenerator_2 = new CharGenerator_2();
-            charGenerator_2.Slova();
             charGenerator_2.Mimnimizacia_veroyatnostnih_chisel();
             Assert.AreEqual(charGenerator_2.chastota[0], 13986435);
         }
@@ -64,7 +53,6 @@ namespace UnitTest1
         public void Test2_3()
         {
             CharGenerator_2 charGenerator_2 = new CharGenerator_2();
-            charGenerator_2.Slova();
             charGenerator_2.Mimnimizacia_veroyatnostnih_chisel();
             Assert.AreEqual(charGenerator_2.summa, charGenerator_2.veroyatnost[99]);
         }
