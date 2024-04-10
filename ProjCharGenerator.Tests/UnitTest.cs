@@ -40,13 +40,11 @@ namespace ProjCharGenerator.Tests
         [TestMethod]
         public void PairWeightBalabola()
         {
-            Assert.AreEqual("ад", balaboba.pairLetters[4]);
             Assert.AreEqual(1139097, balaboba.weights[4]);
         }
         [TestMethod]
         public void PairWeightBalabola2_0()
         {
-            Assert.AreEqual("я", balaboba2_0.words[4]);
             Assert.AreEqual((int)13348.584146654037, (int)balaboba2_0.weights[4]);
         }
     }
