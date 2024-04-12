@@ -94,7 +94,8 @@ namespace generator
                 if(j>=29) {i++;j=0;}
                 sum+=weights[i,j];
             } 
-            return[i,j];
+            int[] a={i,j};
+            return a;
         }   
         public string getSym() 
         {
