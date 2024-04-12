@@ -5,7 +5,7 @@ using System.IO;
 
 namespace generator
 {
-    class CharGenerator 
+    public class CharGenerator 
     {
         private string syms = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя"; 
         private char[] data;
@@ -22,7 +22,7 @@ namespace generator
         }
     }
 
-    class BiCharGenerator
+    public class BiCharGenerator
     {
         private string syms = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя";
         private char[] data;
@@ -38,6 +38,7 @@ namespace generator
             string path = "bi.txt";
             using (StreamReader reader = new StreamReader(path))
             {
+                #nullable enable
                 string? line;
                 while ((line = reader.ReadLine()) != null){
                     string[] input = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
@@ -45,6 +46,7 @@ namespace generator
                     int second = syms.IndexOf(input[1][1]);
                     weights[first, second] = int.Parse(input[2]);
                 }
+                #nullable disable
             }
             data = syms.ToCharArray();
             np = new int[size, size];
@@ -60,7 +62,7 @@ namespace generator
         public char getSym(char prev)
         {
             int m = 0;
-            if (prev != '$') {
+            if (syms.Contains(prev)) {
                 int left;
                 if (prev == syms[0])
                     left = 0;
@@ -83,7 +85,7 @@ namespace generator
         }
     }
 
-    class WordGenerator
+    public class WordGenerator
     {
         const int ACCURACY = 100;
         private List<string> words;
@@ -102,6 +104,7 @@ namespace generator
             string path = "word.txt";
             using (StreamReader reader = new StreamReader(path))
             {
+                #nullable enable
                 string? line;
                 while ((line = reader.ReadLine()) != null){
                     string[] input = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
@@ -109,6 +112,7 @@ namespace generator
                     weights.Add(Convert.ToInt32(Double.Parse(input[2], formatter) * ACCURACY));
                     size ++;
                 }
+                #nullable disable
             }
             np = new List<int>();
             int s2 = 0;
