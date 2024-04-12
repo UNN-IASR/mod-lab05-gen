@@ -1,0 +1,15 @@
+C:\Users\Alena\Desktop\Program\Modeling inform processing\5_gen_text\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp8.0\ProjCharGenerator.exe
+C:\Users\Alena\Desktop\Program\Modeling inform processing\5_gen_text\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp8.0\ProjCharGenerator.deps.json
+C:\Users\Alena\Desktop\Program\Modeling inform processing\5_gen_text\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp8.0\ProjCharGenerator.runtimeconfig.json
+C:\Users\Alena\Desktop\Program\Modeling inform processing\5_gen_text\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp8.0\ProjCharGenerator.dll
+C:\Users\Alena\Desktop\Program\Modeling inform processing\5_gen_text\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp8.0\ProjCharGenerator.pdb
+C:\Users\Alena\Desktop\Program\Modeling inform processing\5_gen_text\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjCharGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alena\Desktop\Program\Modeling inform processing\5_gen_text\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjCharGenerator.AssemblyInfoInputs.cache
+C:\Users\Alena\Desktop\Program\Modeling inform processing\5_gen_text\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjCharGenerator.AssemblyInfo.cs
+C:\Users\Alena\Desktop\Program\Modeling inform processing\5_gen_text\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjCharGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Alena\Desktop\Program\Modeling inform processing\5_gen_text\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjCharGenerator.sourcelink.json
+C:\Users\Alena\Desktop\Program\Modeling inform processing\5_gen_text\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjCharGenerator.dll
+C:\Users\Alena\Desktop\Program\Modeling inform processing\5_gen_text\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\refint\ProjCharGenerator.dll
+C:\Users\Alena\Desktop\Program\Modeling inform processing\5_gen_text\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjCharGenerator.pdb
+C:\Users\Alena\Desktop\Program\Modeling inform processing\5_gen_text\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjCharGenerator.genruntimeconfig.cache
+C:\Users\Alena\Desktop\Program\Modeling inform processing\5_gen_text\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ref\ProjCharGenerator.dll
