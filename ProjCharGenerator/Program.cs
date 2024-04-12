@@ -38,7 +38,7 @@ namespace generator
         public BinaryCharGen() {
             string[] splitline;
             data = new Dictionary<string, int>();
-            foreach(string line in File.ReadLines("C:\\Users\\trosf\\Documents\\Code\\MIPS\\mod-lab05-gen\\Data\\data.csv")) {
+            foreach(string line in File.ReadLines("..\\Data\\data.csv")) {
                 splitline = line.Split(',');
                 data.Add(splitline[0], Convert.ToInt32(splitline[1]));
             }
@@ -84,7 +84,7 @@ namespace generator
         public WordsGen() {
             string[] splitline;
             data = new Dictionary<string, int>();
-            foreach(string line in File.ReadLines("C:\\Users\\trosf\\Documents\\Code\\MIPS\\mod-lab05-gen\\Data\\words.csv")) {
+            foreach(string line in File.ReadLines("..\\Data\\words.csv")) {
                 splitline = line.Split(';');
                 data.Add(splitline[1], Convert.ToInt32(splitline[2]));
             }
@@ -128,7 +128,7 @@ namespace generator
             CharGenerator gen = new CharGenerator();
             BinaryCharGen bingen = new BinaryCharGen();
             WordsGen wgen = new WordsGen();
-            StreamWriter writer1 = new StreamWriter("C:/Users/trosf/Documents/Code/MIPS/mod-lab05-gen/Data/out1.txt",false);
+            StreamWriter writer1 = new StreamWriter("../Data/out1.txt",false);
             for(int i = 1; i < 1001; i++) 
             {
                 char ch = gen.getSym(); 
@@ -136,7 +136,7 @@ namespace generator
                 if (i % 50 == 0) writer1.Write("\n");
             }
             writer1.Close();
-            StreamWriter writer2 = new StreamWriter("C:/Users/trosf/Documents/Code/MIPS/mod-lab05-gen/gen-1.txt",false);
+            StreamWriter writer2 = new StreamWriter("../gen-1.txt",false);
             for(int i = 1; i < 1001; i++) 
             {
                 string s = bingen.getSym(); 
@@ -144,7 +144,7 @@ namespace generator
                 if (i % 50 == 0) writer2.Write("\n");
             }
             writer2.Close();
-            StreamWriter writer3 = new StreamWriter("C:/Users/trosf/Documents/Code/MIPS/mod-lab05-gen/gen-2.txt",false);
+            StreamWriter writer3 = new StreamWriter("../gen-2.txt",false);
             for(int i = 1; i < 1001; i++) 
             {
                 string s = wgen.getWord(); 
