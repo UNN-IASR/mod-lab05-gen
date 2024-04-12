@@ -173,38 +173,38 @@ namespace generator
         static void Main(string[] args)
         {
             CharGenerator gen = new CharGenerator();
-            // SortedDictionary<char, int> stat = new SortedDictionary<char, int>();
-            // for(int i = 0; i < 1000; i++) 
-            // {
-            //    char ch = gen.getSym(); 
-            //    if (stat.ContainsKey(ch))
-            //       stat[ch]++;
-            //    else
-            //       stat.Add(ch, 1); Console.Write(ch);
-            // }
-            // Console.Write('\n');
-            // foreach (KeyValuePair<char, int> entry in stat) 
-            // {
-            //      Console.WriteLine("{0} - {1}",entry.Key,entry.Value/1000.0); 
-            // }
+            SortedDictionary<char, int> stat = new SortedDictionary<char, int>();
+            for(int i = 0; i < 1000; i++) 
+            {
+               char ch = gen.getSym(); 
+               if (stat.ContainsKey(ch))
+                  stat[ch]++;
+               else
+                  stat.Add(ch, 1); Console.Write(ch);
+            }
+            Console.Write('\n');
+            foreach (KeyValuePair<char, int> entry in stat) 
+            {
+                 Console.WriteLine("{0} - {1}",entry.Key,entry.Value/1000.0); 
+            }
 
 
-            // CharGenerator2 gen2 = new CharGenerator2();
-            // string fileName = "gen-1.txt";
-            // using (StreamWriter sw2 = new StreamWriter(fileName))
-            // {
-            //     for(int j = 0; j < 20; j++) {
-            //         for(int i = 0; i < 50; i++) 
-            //         {
-            //             string ch = gen2.getSym();
-            //             sw2.Write(ch + " ");   
-            //         }
-            //         sw2.WriteLine();
-            //     }
-            // }
+            CharGenerator2 gen2 = new CharGenerator2();
+            string fileName = "gen-1.txt";
+            using (StreamWriter sw2 = new StreamWriter(fileName))
+            {
+                for(int j = 0; j < 20; j++) {
+                    for(int i = 0; i < 50; i++) 
+                    {
+                        string ch = gen2.getSym();
+                        sw2.Write(ch + " ");   
+                    }
+                    sw2.WriteLine();
+                }
+            }
             
             CharGenerator3 gen3 = new CharGenerator3();
-            string fileName = "gen-2.txt";
+            fileName = "gen-2.txt";
             using (StreamWriter sw2 = new StreamWriter(fileName))
             {
                 for(int j = 0; j < 20; j++) {

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "sLltugr3FPotxPjt9CrS6kCne5QsWU8xFsByL51KITP8wmJvCjPGVqi2mfflMK6KvZy2N2snxeAPHCyMeEC6gQ==",
+  "dgSpecHash": "hLFwgbV9odGzKKR2nGm8cqX7o8kBMBPNRWraW5MEZB7ff7pkfyJTu1dZwO424X+H9a7nO0UWB+onxSlZ7zlzZw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alena\\Desktop\\Program\\Modeling inform processing\\5_gen_text\\mod-lab05-gen\\ProjCharGenerator\\ProjCharGenerator.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Alena\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\Alena\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\Alena\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\Alena\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.17\\microsoft.netcore.app.host.win-x64.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
