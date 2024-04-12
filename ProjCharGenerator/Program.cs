@@ -38,7 +38,7 @@ namespace generator
         public BinaryCharGen() {
             string[] splitline;
             data = new Dictionary<string, int>();
-            foreach(string line in File.ReadLines("..\\Data\\data.csv")) {
+            foreach(string line in File.ReadLines("data.csv")) {
                 splitline = line.Split(',');
                 data.Add(splitline[0], Convert.ToInt32(splitline[1]));
             }
@@ -84,7 +84,7 @@ namespace generator
         public WordsGen() {
             string[] splitline;
             data = new Dictionary<string, int>();
-            foreach(string line in File.ReadLines("..\\Data\\words.csv")) {
+            foreach(string line in File.ReadLines("words.csv")) {
                 splitline = line.Split(';');
                 data.Add(splitline[1], Convert.ToInt32(splitline[2]));
             }
