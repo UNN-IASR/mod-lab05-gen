@@ -33,13 +33,13 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void Generate_3_ThreeWords()
+        public void Generate_NegativeCount_ThrowsArgumentException()
         {
             //Act
-            var result = generator.Generate(3);
+            var act = () => generator.Generate(-1);
 
             //Assert
-            Assert.AreEqual("bbb bbb aaa", result); // Generate(3) returns three words separated with space
+            Assert.ThrowsException<ArgumentException>(act);
         }
     }
 }

@@ -33,13 +33,13 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void Generate_3_ThreeBigrams()
+        public void Generate_NegativeCount_ThrowsArgumentException()
         {
             //Act
-            var result = generator.Generate(3);
+            var act = () => generator.Generate(-1);
 
             //Assert
-            Assert.AreEqual("aaaaaa", result); // Generate(3) returns three bigrams together
+            Assert.ThrowsException<ArgumentException>(act);
         }
     }
 }

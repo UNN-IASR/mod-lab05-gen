@@ -45,6 +45,13 @@ namespace generator
 
         public string Generate(int count)
         {
+            if(count < 0)
+            {
+                var ex = new ArgumentException($"Count must be positive, but was {count}");
+                ex.Data.Add("Count", count);
+                throw ex;
+            }
+
             var sequence = GetSymbols(count);
             string result = ConstructResultString(sequence);
 
