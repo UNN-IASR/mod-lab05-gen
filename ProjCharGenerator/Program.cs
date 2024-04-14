@@ -1,44 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.IO;
+using System.Text;
+
+using static System.Net.Mime.MediaTypeNames;
 
 namespace generator
 {
-    class CharGenerator 
-    {
-        private string syms = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя"; 
-        private char[] data;
-        private int size;
-        private Random random = new Random();
-        public CharGenerator() 
-        {
-           size = syms.Length;
-           data = syms.ToCharArray(); 
-        }
-        public char getSym() 
-        {
-           return data[random.Next(0, size)]; 
-        }
-    }
     class Program
     {
         static void Main(string[] args)
         {
-            CharGenerator gen = new CharGenerator();
-            SortedDictionary<char, int> stat = new SortedDictionary<char, int>();
-            for(int i = 0; i < 1000; i++) 
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+            var enc1251 = Encoding.GetEncoding(1251);
+            System.Console.OutputEncoding = System.Text.Encoding.UTF8;
+            System.Console.InputEncoding = enc1251;
+
+            BigramGen bg= new BigramGen();
+
+            using (FileStream fstream = new FileStream("../../../../gen-1.txt", FileMode.OpenOrCreate))
             {
-               char ch = gen.getSym(); 
-               if (stat.ContainsKey(ch))
-                  stat[ch]++;
-               else
-                  stat.Add(ch, 1); Console.Write(ch);
+                // преобразуем строку в байты
+                byte[] buffer;
+                for (int i = 0; i < 500; i++)
+                {
+                    buffer = Encoding.Default.GetBytes(bg.getPair());
+                    fstream.Write(buffer, 0, buffer.Length);
+                }
+                Console.WriteLine("Текст записан в файл");
             }
-            Console.Write('\n');
-            foreach (KeyValuePair<char, int> entry in stat) 
-            {
-                 Console.WriteLine("{0} - {1}",entry.Key,entry.Value/1000.0); 
-            }
-            
         }
     }
 }
