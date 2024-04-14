@@ -24,7 +24,7 @@ namespace generator
                 for (int i = 0; i < 600; i++)
                 {
                     string pair = bg.getPair();
-                    buffer = Encoding.GetEncoding(1251).GetBytes(pair);
+                    buffer = Encoding.UTF8.GetBytes(pair);
                     fstream.Write(buffer, 0, buffer.Length);
                 }
                 Console.WriteLine("Текст записан в файл gen-1.txt");
@@ -36,7 +36,7 @@ namespace generator
                 for (int i = 0; i < 300; i++)
                 {
                     string pair = wg.getPair()+" ";
-                    buffer = Encoding.GetEncoding(1251).GetBytes(pair);
+                    buffer = Encoding.UTF8.GetBytes(pair);
                     fstream.Write(buffer, 0, buffer.Length);
                 }
                 Console.WriteLine("Текст записан в файл gen-2.txt");
