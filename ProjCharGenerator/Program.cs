@@ -118,7 +118,7 @@ namespace generator
         static void Main(string[] args)
         {
             {
-                FirstGenerator gen = new("freq2.txt");
+                FirstGenerator gen = new("../../../freq2.txt");
                 string str = gen.generateString(1500);
                 byte[] info = new UTF8Encoding(true).GetBytes(str);
                 FileStream stream = File.Create("gen-1.txt");
@@ -127,7 +127,7 @@ namespace generator
                 stream.Close();
             }
             {
-                SecondGenerator gen = new("freqwords.txt");
+                SecondGenerator gen = new("../../../freqwords.txt");
                 string str = gen.generateString(1500);
                 byte[] info = new UTF8Encoding(true).GetBytes(str);
                 FileStream stream = File.Create("gen-2.txt");
