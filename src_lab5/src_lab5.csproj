@@ -4,7 +4,4 @@
     <TargetFramework>netcoreapp7.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
 </Project>
