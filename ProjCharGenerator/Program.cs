@@ -1,4 +1,8 @@
 ﻿using System;
+using System.IO;
+using System.Net;
+using System.Text;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace generator
@@ -205,11 +209,11 @@ namespace generator
             }
             GeneratorTexta1 generator = new GeneratorTexta1();
             GeneratorTexta2 generator2 = new GeneratorTexta2();
-            using (StreamWriter writer = new StreamWriter("/home/runner/work/mod-lab05-gen/mod-lab05-gen/ProjCharGenerator/ProjCharGenerator.csproj/gen1.txt"))
+            using (StreamWriter writer = new StreamWriter("gen-1.txt"))
             {
                 writer.Write(generator.text(1000));
             }
-            using (StreamWriter writer1 = new StreamWriter("/home/runner/work/mod-lab05-gen/mod-lab05-gen/ProjCharGenerator/ProjCharGenerator.csproj/gen2.txt"))
+            using (StreamWriter writer1 = new StreamWriter("gen-2.txt"))
             {
                 writer1.Write(generator2.wordtext(1000));
             }
