@@ -46,6 +46,7 @@ namespace generator
                 StreamReader Stream_Reader = new StreamReader(BItxt, Encoding.GetEncoding(1251));
         
                 //Считываем первую строку из файла BI.txt
+                #nullable enable
                 string? line = Stream_Reader.ReadLine();
                 //Продолжаем читать файл BI.txt пока не закончится 
                 while (line != null)
@@ -132,7 +133,8 @@ namespace generator
                 string FreqWords = @"C:\Users\wizze\source\repos\lab5MIPS\txt files for generate\frequency_properties_of_words.txt";
                 StreamReader Stream_Reader = new StreamReader(FreqWords, Encoding.GetEncoding(1251));
         
-                //Считываем первую строку из файла BI.txt
+                //Считываем первую строку из файла requency_properties_of_words.txt
+                #nullable enable
                 string? line = Stream_Reader.ReadLine();
                 //Продолжаем читать файл frequency_properties_of_words.txt пока не закончится 
                 int i = 0;
