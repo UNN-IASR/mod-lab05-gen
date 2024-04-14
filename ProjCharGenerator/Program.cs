@@ -151,7 +151,7 @@ namespace generator
             //Берём самую минимальную частоту MIN и вычитаем её из каждого элемента
             public void Minimizing_and_Calculating_Summa()
             {
-                int min = frequency.Min();
+                int min = frequency[99];
                 for (int i = 0; i < 100; i++)
                 {
                     frequency[i] -= min;
