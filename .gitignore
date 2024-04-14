@@ -1,4 +1,6 @@
 TestResults
 Tests/bin
+Tests/obj
 ProjCharGenerator/bin
+ProjCharGenerator/obj
 .vs
