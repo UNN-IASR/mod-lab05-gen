@@ -54,6 +54,14 @@ namespace generator
         {
             return sum;
         }
+        public int getWeight(int index)
+        {
+            return weight[index];
+        }
+        public string getWord(int index)
+        {
+            return words[index];
+        }
     }
     class Program
     {
