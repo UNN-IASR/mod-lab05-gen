@@ -67,17 +67,22 @@ namespace generator
             symbol = syms[nomersymb];
             return symbol;
         }
-        public char secondsymbol(int nomersymb)
+        public int summa_veroyatnosti(int nomersymb)
         {
-            char s;
             int summa_veroyatnosti = 0;
-            Random random = new Random();
-            int razmer = kol_v_stroke();
-            for (int i = 0; i < razmer; i++)
+            for (int i = 0; i < kol_v_stroke(); i++)
             {
                 summa_veroyatnosti += weroyatnosti[nomersymb, i];
             }
-            int r = random.Next(0,summa_veroyatnosti);
+            return summa_veroyatnosti;
+        }
+        public char secondsymbol(int nomersymb)
+        {
+            char s;
+            int summa_ver = summa_veroyatnosti(nomersymb);
+            Random random = new Random();
+            int razmer = kol_v_stroke();
+            int r = random.Next(0,summa_ver);
             for (int i = 0; i < kol_v_stroke(); i++)
             {
                 if (r < weroyatnosti[nomersymb, i])
@@ -142,18 +147,23 @@ namespace generator
             435603, 431285, 427548, 425011, 418547, 403544, 402082, 402002, 399192, 395383, 394195, 389633, 
             388024, 377820, 376185, 374580, 370104, 369179, 361755, 358913
         };
-        public string randomword()
+        public int sum()
         {
-            string s;
-            int sumver = 0;
-            Random random = new Random();
             int razmer1 = weroyatnosti_slov.Length;
-            for (int i =0;i<razmer1;i++)
+            int sumver = 0;
+            for (int i = 0; i < razmer1; i++)
             {
                 sumver += weroyatnosti_slov[i];
             }
-            int r1 = random.Next(0, sumver);
-            for (int i=0;i<razmer1;i++)
+            return sumver;
+        }
+        public string randomword()
+        {
+            string s;
+            Random random = new Random();
+            int sumver = sum();
+            int r1 = random.Next(sumver);
+            for (int i=0;i< weroyatnosti_slov.Length; i++)
             {
                 if(r1<weroyatnosti_slov[i])
                 {
