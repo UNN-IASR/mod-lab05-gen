@@ -5,4 +5,9 @@
     <TargetFramework>netcoreapp7.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Aspose.Cells" Version="24.4.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.60" />
+  </ItemGroup>
+
 </Project>
