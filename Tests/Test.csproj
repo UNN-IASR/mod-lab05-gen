@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp7.0</TargetFramework>
 
-    <IsPackable>true</IsPackable>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
