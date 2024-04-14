@@ -1,7 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using generator;
-#include "Program.cs"
 namespace NET
 {
     [TestClass]
