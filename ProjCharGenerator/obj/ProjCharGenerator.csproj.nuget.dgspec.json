@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/ProjCharGenerator.csproj": {}
+  },
+  "projects": {
+    "/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/ProjCharGenerator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/ProjCharGenerator.csproj",
+        "projectName": "ProjCharGenerator",
+        "projectPath": "/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/ProjCharGenerator.csproj",
+        "packagesPath": "/home/eltisma/.nuget/packages/",
+        "outputPath": "/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/eltisma/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "netcoreapp7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "netcoreapp7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[7.0.17, 7.0.17]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.103/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

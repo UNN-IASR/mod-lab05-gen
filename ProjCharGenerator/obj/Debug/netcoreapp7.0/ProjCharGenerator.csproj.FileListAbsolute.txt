@@ -1,0 +1,15 @@
+/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/bin/Debug/netcoreapp7.0/ProjCharGenerator
+/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/bin/Debug/netcoreapp7.0/ProjCharGenerator.deps.json
+/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/bin/Debug/netcoreapp7.0/ProjCharGenerator.runtimeconfig.json
+/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/bin/Debug/netcoreapp7.0/ProjCharGenerator.dll
+/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/bin/Debug/netcoreapp7.0/ProjCharGenerator.pdb
+/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp7.0/ProjCharGenerator.GeneratedMSBuildEditorConfig.editorconfig
+/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp7.0/ProjCharGenerator.AssemblyInfoInputs.cache
+/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp7.0/ProjCharGenerator.AssemblyInfo.cs
+/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp7.0/ProjCharGenerator.csproj.CoreCompileInputs.cache
+/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp7.0/ProjCharGenerator.sourcelink.json
+/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp7.0/ProjCharGenerator.dll
+/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp7.0/refint/ProjCharGenerator.dll
+/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp7.0/ProjCharGenerator.pdb
+/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp7.0/ProjCharGenerator.genruntimeconfig.cache
+/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/obj/Debug/netcoreapp7.0/ref/ProjCharGenerator.dll

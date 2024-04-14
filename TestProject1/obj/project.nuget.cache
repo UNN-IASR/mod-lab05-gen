@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "jm0KeU6zaKektW9Tu76oG+yUy3u/kTwNhc/8tLTy6QCQVGiHPKhAHrYUcBXQj7hE1C8f1MDo+6RQXy6CJXMiUg==",
+  "success": true,
+  "projectFilePath": "/home/eltisma/development/univer/hw5/mod-lab05-gen/TestProject1/TestProject1.csproj",
+  "expectedPackageFiles": [
+    "/home/eltisma/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
+    "/home/eltisma/.nuget/packages/microsoft.codecoverage/17.6.0/microsoft.codecoverage.17.6.0.nupkg.sha512",
+    "/home/eltisma/.nuget/packages/microsoft.net.test.sdk/17.6.0/microsoft.net.test.sdk.17.6.0.nupkg.sha512",
+    "/home/eltisma/.nuget/packages/microsoft.testplatform.objectmodel/17.6.0/microsoft.testplatform.objectmodel.17.6.0.nupkg.sha512",
+    "/home/eltisma/.nuget/packages/microsoft.testplatform.testhost/17.6.0/microsoft.testplatform.testhost.17.6.0.nupkg.sha512",
+    "/home/eltisma/.nuget/packages/mstest.testadapter/3.0.4/mstest.testadapter.3.0.4.nupkg.sha512",
+    "/home/eltisma/.nuget/packages/mstest.testframework/3.0.4/mstest.testframework.3.0.4.nupkg.sha512",
+    "/home/eltisma/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/home/eltisma/.nuget/packages/nuget.frameworks/5.11.0/nuget.frameworks.5.11.0.nupkg.sha512",
+    "/home/eltisma/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
