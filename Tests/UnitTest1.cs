@@ -32,7 +32,7 @@ namespace NET
             GeneratorTexta2 generator = new GeneratorTexta2();
             generator.randomword();
             Assert.AreEqual(generator.razmer1, 100);
-        }  
+        }
         [TestMethod]
         public void TestMethod5()
         {
