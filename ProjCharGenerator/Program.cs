@@ -23,7 +23,7 @@ namespace generator
            return data[random.Next(0, size)]; 
         }
     }
-    class GeneratorTexta1
+    public class GeneratorTexta1
     {
         public  int[,] weroyatnosti =
         {
@@ -125,7 +125,7 @@ namespace generator
             return text;
         }
     }
-    class GeneratorTexta2
+    public class GeneratorTexta2
     {
         public string[] words = 
         {
