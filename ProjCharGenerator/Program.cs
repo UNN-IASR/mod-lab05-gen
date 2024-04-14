@@ -205,11 +205,11 @@ namespace generator
             }
             GeneratorTexta1 generator = new GeneratorTexta1();
             GeneratorTexta2 generator2 = new GeneratorTexta2();
-            using (StreamWriter writer = new StreamWriter("C:\\Users\\ASUS\\OneDrive\\Рабочий стол\\gen1.txt"))
+            using (StreamWriter writer = new StreamWriter("gen1.txt"))
             {
                 writer.Write(generator.text(1000));
             }
-            using (StreamWriter writer1 = new StreamWriter("C:\\Users\\ASUS\\OneDrive\\Рабочий стол\\gen2.txt"))
+            using (StreamWriter writer1 = new StreamWriter("gen2.txt"))
             {
                 writer1.Write(generator2.wordtext(1000));
             }
