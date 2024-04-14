@@ -5,4 +5,18 @@
     <TargetFramework>netcoreapp7.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="bi.txt" />
+    <None Remove="word.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bi.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="word.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
