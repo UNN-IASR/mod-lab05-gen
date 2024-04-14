@@ -1,44 +1,78 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace generator
 {
-    class CharGenerator 
+    public class Generator
     {
-        private string syms = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя"; 
-        private char[] data;
-        private int size;
-        private Random random = new Random();
-        public CharGenerator() 
+        public List<string> syms;
+        public List<int> weights;
+        public int max;
+        public Generator(List<string> _syms, List<int> _weights)
         {
-           size = syms.Length;
-           data = syms.ToCharArray(); 
+            syms = _syms;
+            weights = _weights;
+            foreach (var w in weights) max += w;
         }
-        public char getSym() 
+        public string getSym()
         {
-           return data[random.Next(0, size)]; 
+            Random random = new Random();
+            int randnum = random.Next(max);
+            string res = "";
+            for (int i = 0; i < syms.Count; i++)
+            {
+                if (randnum < weights[i]) {
+                    res = syms[i];
+                    break;
+                }
+                randnum -= weights[i];
+            }
+            return res;
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            CharGenerator gen = new CharGenerator();
-            SortedDictionary<char, int> stat = new SortedDictionary<char, int>();
-            for(int i = 0; i < 1000; i++) 
+            List<string> syms = new List<string>();
+            List<int>  weights = new List<int>();
+            using (StreamReader file = new StreamReader("bigrams.txt"))
             {
-               char ch = gen.getSym(); 
-               if (stat.ContainsKey(ch))
-                  stat[ch]++;
-               else
-                  stat.Add(ch, 1); Console.Write(ch);
+                while (!file.EndOfStream)
+                {
+                    string[] line = file.ReadLine().Split();
+                    syms.Add(line[0]);
+                    weights.Add(Convert.ToInt32(line[1]));
+                }
             }
-            Console.Write('\n');
-            foreach (KeyValuePair<char, int> entry in stat) 
+            Generator gen1 = new Generator(syms, weights);
+            string res = "";
+            for (int i = 0; i < 1000; i++) res += gen1.getSym();
+            using (StreamWriter file = new StreamWriter("gen1.txt"))
             {
-                 Console.WriteLine("{0} - {1}",entry.Key,entry.Value/1000.0); 
+                file.WriteLine(res);
             }
-            
+
+            syms = new List<string>();
+            weights = new List<int>();
+            using (StreamReader file = new StreamReader("words.txt"))
+            {
+                while (!file.EndOfStream)
+                {
+                    string[] line = file.ReadLine().Split();
+                    syms.Add(line[0]);
+                    weights.Add(Convert.ToInt32(line[1]));
+                }
+            }
+            Generator gen2 = new Generator(syms, weights);
+            res = "";
+            for (int i = 0; i < 1000; i++) res += gen2.getSym() + ",";
+            using (StreamWriter file = new StreamWriter("gen2.txt"))
+            {
+                file.WriteLine(res);
+            }
         }
     }
 }
