@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "V5haYmVCdhGWSo7At5mFGBevZA36un5E+Czu1rmLumv+G7jFkaDI171rVSP3ftGsyhDi97GAzXXhI6epFGgN7A==",
+  "success": true,
+  "projectFilePath": "/home/eltisma/development/univer/hw5/mod-lab05-gen/ProjCharGenerator/ProjCharGenerator.csproj",
+  "expectedPackageFiles": [
+    "/home/eltisma/.nuget/packages/microsoft.netcore.app.host.linux-x64/7.0.17/microsoft.netcore.app.host.linux-x64.7.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
