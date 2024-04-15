@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\prusa\\OneDrive\\Рабочий стол\\Учеба\\Учеба\\Штанюк\\lab 5\\mod-lab05-gen\\UnitTests\\UnitTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\prusa\\OneDrive\\Рабочий стол\\Учеба\\Учеба\\Штанюк\\lab 5\\mod-lab05-gen\\ProjCharGenerator\\ProjCharGenerator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\prusa\\OneDrive\\Рабочий стол\\Учеба\\Учеба\\Штанюк\\lab 5\\mod-lab05-gen\\ProjCharGenerator\\ProjCharGenerator.csproj",
+        "projectName": "ProjCharGenerator",
+        "projectPath": "C:\\Users\\prusa\\OneDrive\\Рабочий стол\\Учеба\\Учеба\\Штанюк\\lab 5\\mod-lab05-gen\\ProjCharGenerator\\ProjCharGenerator.csproj",
+        "packagesPath": "C:\\Users\\prusa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\prusa\\OneDrive\\Рабочий стол\\Учеба\\Учеба\\Штанюк\\lab 5\\mod-lab05-gen\\ProjCharGenerator\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\prusa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "netcoreapp7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "netcoreapp7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\prusa\\OneDrive\\Рабочий стол\\Учеба\\Учеба\\Штанюк\\lab 5\\mod-lab05-gen\\UnitTests\\UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\prusa\\OneDrive\\Рабочий стол\\Учеба\\Учеба\\Штанюк\\lab 5\\mod-lab05-gen\\UnitTests\\UnitTests.csproj",
+        "projectName": "UnitTests",
+        "projectPath": "C:\\Users\\prusa\\OneDrive\\Рабочий стол\\Учеба\\Учеба\\Штанюк\\lab 5\\mod-lab05-gen\\UnitTests\\UnitTests.csproj",
+        "packagesPath": "C:\\Users\\prusa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\prusa\\OneDrive\\Рабочий стол\\Учеба\\Учеба\\Штанюк\\lab 5\\mod-lab05-gen\\UnitTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\prusa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\prusa\\OneDrive\\Рабочий стол\\Учеба\\Учеба\\Штанюк\\lab 5\\mod-lab05-gen\\ProjCharGenerator\\ProjCharGenerator.csproj": {
+                "projectPath": "C:\\Users\\prusa\\OneDrive\\Рабочий стол\\Учеба\\Учеба\\Штанюк\\lab 5\\mod-lab05-gen\\ProjCharGenerator\\ProjCharGenerator.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
