@@ -1,110 +1,114 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
 namespace generator
 {
-    public class CharGenerator
+   public class CharGenerator
     {
-        private string syms = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя"; 
+        private string syms = "абвгдёежзийклмнопростуфхцчшщъыьэюя";
         private char[] data;
-@@ -19,6 +20,75 @@ public char getSym()
-           return data[random.Next(0, size)]; 
+        private int size;
+        private Random random = new Random();
+        public CharGenerator()
+        {
+            size = syms.Length;
+            data = syms.ToCharArray();
+        }
+        public char getSym()
+        {
+            return data[random.Next(0, size)];
         }
     }
 
     public class TextGenerator
     {
         private string[] words;
-        private double[] prefixSum;
-        private int size;
-        private Random random = new Random();
-        public TextGenerator() 
-        {
-            size = 0;
-        }
+        private double[] weightSum;
 
+        private Random random = new Random();
+        public TextGenerator()
+        {
+
+        }
         public TextGenerator(string[] words, double[] values)
         {
-            size = words.Length;
             this.words = words;
-            prefixSum = new double[size];
-
-            for (int i = 0; i < size; i++)
+            weightSum = new double[words.Length];
+            weightSum[0] = values[0];
+            for (int i = 1; i < words.Length; i++)
             {
-                if (i == 0)
-                {
-                    prefixSum[i] = values[i];
-                }
-                else
-                {   
-                    prefixSum[i] = prefixSum[i - 1] + values[i];
-                }
+                weightSum[i] = weightSum[i - 1] + values[i];
             }
         }
-
-        public void LoadDataFromFile(string filename)
+        public void FileLoading(string filename)
         {
             string[] lines = File.ReadAllLines(filename);
+            words = new string[lines.Length];
+            weightSum = new double[lines.Length];
 
-            size = lines.Length;
-            words = new string[size];
-            prefixSum = new double[size];
-
-            for (int i = 0; i < lines.Length; i++)
+            string[] parseParts = lines[0].Split(' ');
+            words[0] = parseParts[0];
+            weightSum[0] = double.Parse(parseParts[1]);
+            for (int i = 1; i < lines.Length; i++)
             {
-                string[] parts = lines[i].Split(' ');
-                words[i] = parts[0];
-                if (i == 0) 
-                {
-                    prefixSum[i] = double.Parse(parts[1]);
-                }
-                else
-                {
-                    prefixSum[i] = prefixSum[i - 1] + double.Parse(parts[1]);
-                }
-            } 
+                parseParts = lines[i].Split(' ');
+                words[i] = parseParts[0];
+                weightSum[i] = weightSum[i - 1] + double.Parse(parseParts[1]);
+            }
         }
 
-        public string getSym() 
+        public string getSym()
         {
-            int ind;
-            double value = random.NextDouble() * prefixSum[size - 1];
-            for(ind = 0; ind < size; ind++)
+            int size = weightSum.Length;
+            double value = random.NextDouble() * weightSum[size - 1];
+            for (int i = 0; i < size; i++)
             {
-                if(value < prefixSum[ind])
+                if (value < weightSum[i])
                 {
-                    break;
+                    return words[i];
                 }
             }
-            return words[ind]; 
+            return null;
         }
-
     }
+
     class Program
     {
         static void Main(string[] args)
-@@ -39,6 +109,23 @@ static void Main(string[] args)
-                 Console.WriteLine("{0} - {1}",entry.Key,entry.Value/1000.0); 
+        {
+            CharGenerator gen = new CharGenerator();
+            SortedDictionary<char, int> stat = new SortedDictionary<char, int>();
+                for (int i = 0; i < 1000; i++)
+                {
+                    char ch = gen.getSym();
+                    if (stat.ContainsKey(ch))
+                        stat[ch]++;
+                    else
+                        stat.Add(ch, 1); Console.Write(ch);
+                }
+            Console.Write('\n');
+            foreach (KeyValuePair<char, int> entry in stat)
+            {
+                Console.WriteLine("{0} - {1}", entry.Key, entry.Value / 1000.0);
             }
 
-            string res1, res2;
-            res1 = res2 = "";
+            string resultLines1, resultLines2;
+            resultLines1 = resultLines2 = "";
             TextGenerator generator = new TextGenerator();
-
-            generator.LoadDataFromFile("Data1.txt");
-            for(int i = 0; i < 1000; i++) 
+            generator.FileLoading("Data_1.txt");
+            for (int i = 0; i < 1000; i++)
             {
-               res1 += generator.getSym();
+                resultLines1 += generator.getSym();
             }
-            File.WriteAllText("Res1.txt", res1);
+            File.WriteAllText("gen_1.txt", resultLines1, System.Text.Encoding.UTF8);
 
-            generator.LoadDataFromFile("Data2.txt");
-            for(int i = 0; i < 1000; i++) 
+            generator.FileLoading("Data_2.txt");
+            for (int i = 0; i < 1000; i++)
             {
-               res2 += generator.getSym();
+                resultLines2 += generator.getSym();
             }
-            File.WriteAllText("Res2.txt", res2);
+            File.WriteAllText("gen_2.txt", resultLines2, System.Text.Encoding.UTF8);
         }
     }
 }
