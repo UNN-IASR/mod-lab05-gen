@@ -5,4 +5,27 @@
     <TargetFramework>netcoreapp7.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove=".txt" />
+    <None Remove="bigrams.txt" />
+    <None Remove="testBigrams.txt" />
+    <None Remove="testWords.txt" />
+    <None Remove="dictionary.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bigrams.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testBigrams.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testWords.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dictionary.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
