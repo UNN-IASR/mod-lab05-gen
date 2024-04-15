@@ -1,4 +1,8 @@
-﻿Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjCharGenerator", "ProjCharGenerator\ProjCharGenerator.csproj", "{50520084-DEC7-4E01-BAB2-5D4043C4C719}"
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjCharGenerator", "ProjCharGenerator\ProjCharGenerator.csproj", "{50520084-DEC7-4E01-BAB2-5D4043C4C719}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{39626FB8-01D6-4DD0-A52A-60804A84EF49}"
 EndProject
