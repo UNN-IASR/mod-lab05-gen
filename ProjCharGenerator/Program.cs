@@ -1,45 +1,109 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace generator
 {
-    class CharGenerator 
+    public abstract class Generator
     {
-        private string syms = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя"; 
-        private char[] data;
-        private int size;
-        private Random random = new Random();
-        public CharGenerator() 
+        protected Dictionary<string, long> bigramsInfo;
+        protected long weightsSum;
+
+        public Generator(string dataPath)
         {
-           size = syms.Length;
-           data = syms.ToCharArray(); 
+            bigramsInfo = new Dictionary<string, long>();
+            weightsSum = 0;
+
+            GetInfo(dataPath);
         }
-        public char getSym() 
+
+        private void GetInfo(string fileName)
         {
-           return data[random.Next(0, size)]; 
+            foreach (var line in File.ReadLines(fileName))
+            {
+                var splitted = line
+                    .Split('\t')
+                    .Where(s => s.Length > 0)
+                    .ToArray();
+                weightsSum += long.Parse(splitted[1]);
+                bigramsInfo[splitted[0]] = weightsSum;
+            }
+        }
+
+        public string StartGenerator(int count)
+        {
+            Random random = new Random();
+            var res_gen = new List<string>();
+            long number;
+
+            for (int i = 0; i < count; i++)
+            {
+                number = random.NextInt64(weightsSum);
+                foreach (var item in bigramsInfo)
+                {
+                    if (number < item.Value)
+                    {
+                        res_gen.Add(item.Key);
+                        break;
+                    }
+                }
+            }
+
+            string result = outputResult(res_gen);
+            return result;
+        }
+
+        protected abstract string outputResult(List<string> res);
+    }
+
+    public class BigramsGenerator : Generator
+    {
+        private const string nameFile = "bigrams.txt";
+
+        public BigramsGenerator(string dataPath = nameFile) : base(dataPath) { }
+
+        protected override string outputResult(List<string> res)
+        {
+            return String.Concat(res);
         }
     }
+
+    public class WordsGenerator : Generator
+    {
+        private const string nameFile = "words.txt";
+
+        public WordsGenerator(string dataPath = nameFile) : base(dataPath) { }
+
+        protected override string outputResult(List<string> res)
+        {
+            return String.Join(' ', res);
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
-            CharGenerator gen = new CharGenerator();
-            SortedDictionary<char, int> stat = new SortedDictionary<char, int>();
-            for(int i = 0; i < 1000; i++) 
+            var bigramsGen = new BigramsGenerator();
+            var res = bigramsGen.StartGenerator(1000);
+
+            //Console.WriteLine(res);
+
+            using (var fileBigrams = new StreamWriter("gen-1.txt", false, System.Text.Encoding.UTF8))
             {
-               char ch = gen.getSym(); 
-               if (stat.ContainsKey(ch))
-                  stat[ch]++;
-               else
-                  stat.Add(ch, 1); Console.Write(ch);
+                fileBigrams.Write(res);
             }
-            Console.Write('\n');
-            foreach (KeyValuePair<char, int> entry in stat) 
+
+            var wordsGen = new WordsGenerator();
+            res = wordsGen.StartGenerator(1000);
+
+            //Console.WriteLine(res);
+
+            using (var fileWords = new StreamWriter("gen-2.txt", false, System.Text.Encoding.UTF8))
             {
-                 Console.WriteLine("{0} - {1}",entry.Key,entry.Value/1000.0); 
+                fileWords.Write(res);
             }
-            
         }
     }
 }
-
