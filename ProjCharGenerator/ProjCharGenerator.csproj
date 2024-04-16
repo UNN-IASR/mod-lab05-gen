@@ -2,7 +2,29 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp7.0</TargetFramework>
+    <TargetFramework>netcoreapp6.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Gen1.txt" />
+    <None Remove="Gen2.txt" />
+    <None Remove="words1.txt" />
+    <None Remove="words2.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Gen1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Gen2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="words1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="words2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
 </Project>
