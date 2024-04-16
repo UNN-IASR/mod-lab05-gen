@@ -7,6 +7,22 @@ using System.Transactions;
 
 namespace generator
 {
+    class CharGenerator
+    {
+        private string syms = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя";
+        private char[] data;
+        private int size;
+        private Random random = new Random();
+        public CharGenerator()
+        {
+            size = syms.Length;
+            data = syms.ToCharArray();
+        }
+        public char getSym()
+        {
+            return data[random.Next(0, size)];
+        }
+    }
     public class FirstGenerator
     {
         Dictionary<char, SortedList<int, char>> map;
@@ -131,6 +147,17 @@ namespace generator
                 string str = gen.generateString(1500);
                 byte[] info = new UTF8Encoding(true).GetBytes(str);
                 FileStream stream = File.Create("gen-2.txt");
+                if (!stream.CanWrite) throw new Exception("cannot write");
+                stream.Write(info);
+                stream.Close();
+            }
+            {
+                CharGenerator gen = new();
+                string output = "";
+                for (int i = 0; i < 1500; i++)
+                    output = string.Concat(output, gen.getSym().ToString());
+                byte[] info = new UTF8Encoding(true).GetBytes(output);
+                FileStream stream = File.Create("gen-0.txt");
                 if (!stream.CanWrite) throw new Exception("cannot write");
                 stream.Write(info);
                 stream.Close();
