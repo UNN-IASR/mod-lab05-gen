@@ -36,14 +36,14 @@ public class UnitTest1
     public void TestMethod3()
     {
         BinaryCharGen bcg = new BinaryCharGen();
-        int truesize = 694;
+        int truesize = 33;
         Assert.AreEqual(bcg.getSize(), truesize);
     }
     [TestMethod]
     public void TestMethod31()
     {
         BinaryCharGen bcg = new BinaryCharGen();
-        int truesize = 690;
+        int truesize = 40;
         Assert.AreNotEqual(bcg.getSize(), truesize);
     }
     [TestMethod]
@@ -63,8 +63,11 @@ public class UnitTest1
     [TestMethod]
     public void TestMethod6()
     {
+        string syms = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя";
+        Random r = new Random();
+        char c = syms[r.Next(0,syms.Length)];
         BinaryCharGen bcg = new BinaryCharGen();
-        string bc  = bcg.getSym();
+        char bc  = bcg.getSym(c);
         Assert.IsTrue(bcg.isBinCharInData(bc));
     }
 }
