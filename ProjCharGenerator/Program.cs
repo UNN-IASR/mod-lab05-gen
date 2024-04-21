@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Reflection.Metadata;
 
 namespace generator
 {
@@ -18,27 +20,80 @@ namespace generator
         {
            return data[random.Next(0, size)]; 
         }
+
+    }
+    public class BigramGenerator
+    {
+        public string[] words;
+        public int[] weights;
+        public int total;
+        private Random random = new Random();
+        public BigramGenerator(string inputFile)
+        {
+            string[] lines = File.ReadAllLines(inputFile);
+            words = new string[lines.Length];
+            weights = new int[lines.Length];
+            for (var i = 0; i < words.Length; i++)
+            {
+                var fff = lines[i].Split('\t');
+                words[i] = fff[0];
+                int weight = Convert.ToInt32(fff[1]);
+                total += weight;
+                weights[i] = total;
+            }
+        }
+        virtual public string Result()
+        {
+            string result = "";
+            while(result.Length < 1000)
+            {
+                string word = GenerateWord();
+                result += word;
+            }
+            return result;
+        }
+        public string GenerateWord()
+        {
+            int rand = random.Next(0, total);
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (rand < weights[i]) return words[i];
+            }
+            return "";
+        }
+    }
+    public class WordsGenerator : BigramGenerator
+    {
+        public WordsGenerator(string inputFile): base(inputFile) { }
+        public override string Result()
+        {
+            string result = "";
+            while (result.Length < 1000)
+            {
+                string word = GenerateWord();
+                result += word;
+                result += " ";
+            }
+            return result;
+        }
     }
     class Program
     {
         static void Main(string[] args)
         {
             CharGenerator gen = new CharGenerator();
-            SortedDictionary<char, int> stat = new SortedDictionary<char, int>();
-            for(int i = 0; i < 1000; i++) 
+            string result = "";
+            for (int i = 0; i < 1000; i++)
             {
-               char ch = gen.getSym(); 
-               if (stat.ContainsKey(ch))
-                  stat[ch]++;
-               else
-                  stat.Add(ch, 1); Console.Write(ch);
+                result += gen.getSym();
             }
-            Console.Write('\n');
-            foreach (KeyValuePair<char, int> entry in stat) 
-            {
-                 Console.WriteLine("{0} - {1}",entry.Key,entry.Value/1000.0); 
-            }
+            File.WriteAllText("../../../../gen.txt", result);
             
+            BigramGenerator gen1 = new BigramGenerator("../../../../bigrams.txt");
+            File.WriteAllText("../../../../gen-1.txt", gen1.Result());
+
+            WordsGenerator gen2 = new WordsGenerator("../../../../words.txt");
+            File.WriteAllText("../../../../gen-2.txt", gen2.Result());
         }
     }
 }
