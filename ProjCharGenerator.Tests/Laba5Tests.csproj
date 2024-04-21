@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Laba5\Laba5.csproj" />
+    <ProjectReference Include="..\ProjCharGenerator\ProjCharGenerator.csproj" />
   </ItemGroup>
 
   <ItemGroup>
