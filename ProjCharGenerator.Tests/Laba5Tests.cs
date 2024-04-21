@@ -18,5 +18,12 @@ namespace laba5.Tests
             Assert.AreEqual(text.sum, 414975024);
             //Assert.Fail();
         }
+        [TestMethod]
+        public void CreatingTextTest1()
+        {
+            CreatingText text = new("Probability.txt");
+            Assert.AreEqual(text.sum, 414975024);
+            //Assert.Fail();
+        }
     }
 }
