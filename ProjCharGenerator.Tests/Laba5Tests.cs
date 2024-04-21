@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace laba5.Tests
 {
-    [TestClass()]
+    [TestClass]
     public class CreatingTextTests
     {
-        [TestMethod()]
+        [TestMethod]
         public void CreatingTextTest()
         {
             CreatingText text = new("Probability.txt");
