@@ -1,24 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
-namespace generator
+namespace ProjCharGenerator
 {
-    class CharGenerator 
-    {
-        private string syms = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя"; 
-        private char[] data;
-        private int size;
-        private Random random = new Random();
-        public CharGenerator() 
-        {
-           size = syms.Length;
-           data = syms.ToCharArray(); 
-        }
-        public char getSym() 
-        {
-           return data[random.Next(0, size)]; 
-        }
-    }
     class Program
     {
         static void Main(string[] args)
@@ -27,7 +12,7 @@ namespace generator
             SortedDictionary<char, int> stat = new SortedDictionary<char, int>();
             for(int i = 0; i < 1000; i++) 
             {
-               char ch = gen.getSym(); 
+               char ch = gen.getSymbol(); 
                if (stat.ContainsKey(ch))
                   stat[ch]++;
                else
@@ -36,9 +21,24 @@ namespace generator
             Console.Write('\n');
             foreach (KeyValuePair<char, int> entry in stat) 
             {
-                 Console.WriteLine("{0} - {1}",entry.Key,entry.Value/1000.0); 
+                 Console.WriteLine("{0} - {1}",entry.Key,entry.Value/1000.0);
             }
-            
+
+            Generator generator1 = new Generator("bigram.txt");
+            string resultBigram = "";
+            for (int i = 0; i < 1000; i++)
+            {
+                resultBigram += generator1.getPartOfText();
+            }
+            File.WriteAllText("gen-1.txt", resultBigram, System.Text.Encoding.UTF8);
+
+            Generator generator2 = new Generator("words.txt");
+            string resultWords = "";
+            for (int i = 0; i < 1000; i++)
+            {
+                resultWords += generator2.getPartOfText() + " ";
+            }
+            File.WriteAllText("gen-2.txt", resultWords, System.Text.Encoding.UTF8);
         }
     }
 }
