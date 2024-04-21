@@ -6,8 +6,8 @@ namespace laba5
     public class CreatingText
     {
         public int sum;
-        private List<int> Power;
-        private List<string> words;
+        public List<int> Power;
+        public List<string> words;
         
         public CreatingText(string file)
         {
