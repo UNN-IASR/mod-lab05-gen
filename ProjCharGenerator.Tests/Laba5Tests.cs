@@ -41,6 +41,7 @@ namespace laba5.Tests
             CreatingText text = new("Probability.txt");
             Assert.AreEqual(text.Power[0], 8146);
         }
+        [TestMethod()]
         public void CreatingTextTest5()
         {
             CreatingText text = new("Probability.txt");
