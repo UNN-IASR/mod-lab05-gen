@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
 namespace laba5
 {
     public class CreatingText
