@@ -45,7 +45,7 @@ namespace laba5.Tests
         public void CreatingTextTest5()
         {
             CreatingText text = new("Probability.txt");
-            Assert.AreEqual(text.words[0], "aa");
+            Assert.AreEqual(text.words[0], "аа");
         }
     }
 }
