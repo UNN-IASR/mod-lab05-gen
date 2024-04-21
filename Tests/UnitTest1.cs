@@ -10,7 +10,7 @@ namespace TestProject1
         [TestMethod]
         public void TestMethod1()
         {
-            Generator generator = new Generator("bigram_in.txt");
+            Generator generator = new Generator(""../../../../bigram_in.txt"");
             Assert.IsTrue(generator.getSum() != 0);
         }
         [TestMethod]
