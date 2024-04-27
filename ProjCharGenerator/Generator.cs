@@ -30,6 +30,11 @@ namespace ProjCharGenerator
             return "";
         }
 
+        public int getSize()
+        {
+            return pairs.Length;
+        }
+
         record Pair(string word, int weight) { }
     }
 }

@@ -24,21 +24,21 @@ namespace ProjCharGenerator
                  Console.WriteLine("{0} - {1}",entry.Key,entry.Value/1000.0);
             }
 
-            Generator generator1 = new Generator("bigram.txt");
+            Generator generator1 = new Generator("../../../../bigram.txt");
             string resultBigram = "";
             for (int i = 0; i < 1000; i++)
             {
                 resultBigram += generator1.getPartOfText();
             }
-            File.WriteAllText("gen-1.txt", resultBigram, System.Text.Encoding.UTF8);
+            File.WriteAllText("../../../../gen-1.txt", resultBigram, System.Text.Encoding.UTF8);
 
-            Generator generator2 = new Generator("words.txt");
+            Generator generator2 = new Generator("../../../../words.txt");
             string resultWords = "";
             for (int i = 0; i < 1000; i++)
             {
                 resultWords += generator2.getPartOfText() + " ";
             }
-            File.WriteAllText("gen-2.txt", resultWords, System.Text.Encoding.UTF8);
+            File.WriteAllText("../../../../gen-2.txt", resultWords, System.Text.Encoding.UTF8);
         }
     }
 }
