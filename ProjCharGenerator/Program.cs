@@ -1,44 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using CharGenerator;
 
-namespace generator
+namespace Generator
 {
-    class CharGenerator 
-    {
-        private string syms = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя"; 
-        private char[] data;
-        private int size;
-        private Random random = new Random();
-        public CharGenerator() 
-        {
-           size = syms.Length;
-           data = syms.ToCharArray(); 
-        }
-        public char getSym() 
-        {
-           return data[random.Next(0, size)]; 
-        }
-    }
     class Program
     {
+        static Random rd = new Random();
         static void Main(string[] args)
         {
-            CharGenerator gen = new CharGenerator();
-            SortedDictionary<char, int> stat = new SortedDictionary<char, int>();
-            for(int i = 0; i < 1000; i++) 
-            {
-               char ch = gen.getSym(); 
-               if (stat.ContainsKey(ch))
-                  stat[ch]++;
-               else
-                  stat.Add(ch, 1); Console.Write(ch);
-            }
-            Console.Write('\n');
-            foreach (KeyValuePair<char, int> entry in stat) 
-            {
-                 Console.WriteLine("{0} - {1}",entry.Key,entry.Value/1000.0); 
-            }
-            
+            int size = 1050;
+            FileSave("gen-1.txt", new BigramChar(rd).GetText(size));
+            FileSave("gen-2.txt", new BigramWord(rd).GetText(size));
+            FileSave("gen-3.txt", new BigramPairWord(rd).GetText(size));
+        }
+
+        static void FileSave(string path, string text)
+        {
+            File.WriteAllText(path, text);
         }
     }
 }
