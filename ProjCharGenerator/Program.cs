@@ -38,7 +38,7 @@ namespace generator
             boundaries = new int[sequenceLength, sequenceLength];
             probabilities = new int[sequenceLength, sequenceLength];
 
-            string fileContent = File.ReadAllText(@"BI.txt");
+            string fileContent = File.ReadAllText(@"../../../BI.txt");
             string[] lines = fileContent.Split('\n');
             foreach (string line in lines)
             {
@@ -116,7 +116,7 @@ namespace generator
             wordList = new string[maxWordsCount];
             wordFrequencies = new int[maxWordsCount];
 
-            string freqWordsPath = @"frequency_properties_of_words.txt";
+            string freqWordsPath = @"../../../frequency_properties_of_words.txt";
             using (StreamReader streamReader = new StreamReader(freqWordsPath))
             {
                 string? line = streamReader.ReadLine();
