@@ -201,7 +201,6 @@ namespace generator
             string File_Name = @"C:\Users\wizze\source\repos\ProjCharGenerator\gen-1.txt";
             //Записываем всё в файл gen-0.txt в результате работы CharGenerator
             Generator_BIgramm gen1 = new Generator_BIgramm();
-            //CharacterSequenceGenerator gen1 = new CharacterSequenceGenerator();
             //Первое вхождение для того чтобы оно работало 
             char letter = 'а';
             using (StreamWriter Stream_Writer = new StreamWriter(File_Name))
@@ -235,13 +234,11 @@ namespace generator
             string File_Name = @"C:\Users\wizze\source\repos\ProjCharGenerator\gen-2.txt";
             //Записываем всё в файл gen-0.txt в результате работы CharGenerator
             Generator_Words_Text gen2 = new Generator_Words_Text();
-            //gen2.Minimizing_and_Calculating_Summa();
             gen2.CalculateAndMinimizeSum();
             using (StreamWriter Stream_Writer = new StreamWriter(File_Name))
             {
                 for (int i = 0; i < 1000; i++)
                 {
-                    //string ch = String.Concat(gen2.getWord(), " ");
                     string ch = String.Concat(gen2.GetRandomWord(), " ");
                     Stream_Writer.Write(ch);
                 }
@@ -250,12 +247,12 @@ namespace generator
 
         static void Main(string[] args)
         {
-            //funtion_for_gen_0_txt();
+            funtion_for_gen_0_txt();
 
-            //funtion_for_gen_1_txt();
+            funtion_for_gen_1_txt();
 
             funtion_for_gen_2_txt();
         }
     }
-    
+
 }
