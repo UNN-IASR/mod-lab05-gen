@@ -18,7 +18,7 @@ namespace TestProject1
         public void Test_1_2()
         {
             CharGenerator gen0 = new CharGenerator();
-            string alf = "ΰαβγδεΈζηθικλμνξοπρςστυφχψωόϋϊύώÿ";
+            string alf = "Π°Π±Π²Π³Π΄ΠµΡ‘Π¶Π·ΠΈΠΉΠΊΠ»ΠΌΠ½ΠΎΠΏΡ€ΡΡ‚ΡƒΡ„Ρ…Ρ†Ρ‡ΡΡ‰ΡΡ‹ΡΡΡΡ";
 
             for (int i = 0; i < 100; i++)
             {
@@ -37,7 +37,7 @@ namespace TestProject1
         public void Test_2_2()
         {
             Generator_BIgramm gen1 = new Generator_BIgramm();
-            string alf = "ΰαβγδεΈζηθικλμνξοπρςστυφχψωόϋϊύώÿ";
+            string alf = "Π°Π±Π²Π³Π΄ΠµΡ‘Π¶Π·ΠΈΠΉΠΊΠ»ΠΌΠ½ΠΎΠΏΡ€ΡΡ‚ΡƒΡ„Ρ…Ρ†Ρ‡ΡΡ‰ΡΡ‹ΡΡΡΡ";
             Assert.IsFalse(!alf.Contains(gen1.GetSymbol(' ')));
         }
 
@@ -53,7 +53,7 @@ namespace TestProject1
         public void Test_3_2()
         {
             Generator_Words_Text gen2 = new Generator_Words_Text();
-            Assert.AreEqual(gen2.wordList[6], "αϋςό");
+            Assert.AreEqual(gen2.wordList[6], "Π±Ρ‹Ρ‚Ρ");
         }
     }
 }
