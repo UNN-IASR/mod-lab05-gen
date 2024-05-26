@@ -35,12 +35,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TestProject1",
+              "Title": "TestProject1.csproj",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\\u041C\u0418\u041F\u0421 \u043B\u0430\u0431\u044B\\5\\mod-lab05-gen\\TestProject1\\TestProject1.csproj",
               "RelativeDocumentMoniker": "TestProject1\\TestProject1.csproj",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\\u041C\u0418\u041F\u0421 \u043B\u0430\u0431\u044B\\5\\mod-lab05-gen\\TestProject1\\TestProject1.csproj",
               "RelativeToolTip": "TestProject1\\TestProject1.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-05-26T17:27:16.751Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "TestProject1\\UnitTest1.cs",
               "ViewState": "AQIAADgAAAAAAAAAAAAIwEYAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T16:15:05.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-26T16:15:05.503Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "ProjCharGenerator\\ProjCharGenerator.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-26T15:16:48.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-26T15:16:48.362Z"
             },
             {
               "$type": "Document",
