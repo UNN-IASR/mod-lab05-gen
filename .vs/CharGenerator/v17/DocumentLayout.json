@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\\u041C\u0418\u041F\u0421 \u043B\u0430\u0431\u044B\\5\\mod-lab05-gen\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{866FD6E4-0E3C-4FB9-9E95-7D5980678D35}|TestProject1\\TestProject1.csproj|c:\\users\\admin\\source\\repos\\\u043C\u0438\u043F\u0441 \u043B\u0430\u0431\u044B\\5\\mod-lab05-gen\\testproject1\\testproject1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{866FD6E4-0E3C-4FB9-9E95-7D5980678D35}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\testproject1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50520084-DEC7-4E01-BAB2-5D4043C4C719}|ProjCharGenerator\\ProjCharGenerator.csproj|c:\\users\\admin\\source\\repos\\\u043C\u0438\u043F\u0441 \u043B\u0430\u0431\u044B\\5\\mod-lab05-gen\\projchargenerator\\projchargenerator.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{50520084-DEC7-4E01-BAB2-5D4043C4C719}|ProjCharGenerator\\ProjCharGenerator.csproj|solutionrelative:projchargenerator\\projchargenerator.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{866FD6E4-0E3C-4FB9-9E95-7D5980678D35}|TestProject1\\TestProject1.csproj|c:\\users\\admin\\source\\repos\\\u043C\u0438\u043F\u0441 \u043B\u0430\u0431\u044B\\5\\mod-lab05-gen\\testproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{866FD6E4-0E3C-4FB9-9E95-7D5980678D35}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{50520084-DEC7-4E01-BAB2-5D4043C4C719}|ProjCharGenerator\\ProjCharGenerator.csproj|c:\\users\\admin\\source\\repos\\\u043C\u0438\u043F\u0441 \u043B\u0430\u0431\u044B\\5\\mod-lab05-gen\\projchargenerator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50520084-DEC7-4E01-BAB2-5D4043C4C719}|ProjCharGenerator\\ProjCharGenerator.csproj|solutionrelative:projchargenerator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50520084-DEC7-4E01-BAB2-5D4043C4C719}|ProjCharGenerator\\ProjCharGenerator.csproj|c:\\users\\admin\\source\\repos\\\u043C\u0438\u043F\u0441 \u043B\u0430\u0431\u044B\\5\\mod-lab05-gen\\projchargenerator\\projchargenerator.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{50520084-DEC7-4E01-BAB2-5D4043C4C719}|ProjCharGenerator\\ProjCharGenerator.csproj|solutionrelative:projchargenerator\\projchargenerator.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,6 +35,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TestProject1",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\\u041C\u0418\u041F\u0421 \u043B\u0430\u0431\u044B\\5\\mod-lab05-gen\\TestProject1\\TestProject1.csproj",
+              "RelativeDocumentMoniker": "TestProject1\\TestProject1.csproj",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\\u041C\u0418\u041F\u0421 \u043B\u0430\u0431\u044B\\5\\mod-lab05-gen\\TestProject1\\TestProject1.csproj",
+              "RelativeToolTip": "TestProject1\\TestProject1.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-26T17:27:16.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\\u041C\u0418\u041F\u0421 \u043B\u0430\u0431\u044B\\5\\mod-lab05-gen\\TestProject1\\UnitTest1.cs",
               "RelativeDocumentMoniker": "TestProject1\\UnitTest1.cs",
@@ -43,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ProjCharGenerator.csproj",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\\u041C\u0418\u041F\u0421 \u043B\u0430\u0431\u044B\\5\\mod-lab05-gen\\ProjCharGenerator\\ProjCharGenerator.csproj",
               "RelativeDocumentMoniker": "ProjCharGenerator\\ProjCharGenerator.csproj",
@@ -56,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\\u041C\u0418\u041F\u0421 \u043B\u0430\u0431\u044B\\5\\mod-lab05-gen\\ProjCharGenerator\\Program.cs",
               "RelativeDocumentMoniker": "ProjCharGenerator\\Program.cs",
@@ -64,8 +81,7 @@
               "RelativeToolTip": "ProjCharGenerator\\Program.cs",
               "ViewState": "AQIAAKoAAAAAAAAAAIAwwL4AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T15:01:58.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-26T15:01:58.605Z"
             }
           ]
         }
