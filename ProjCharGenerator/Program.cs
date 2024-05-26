@@ -94,6 +94,68 @@ namespace generator
             return charWeights.Last().Item1; // Резервный вариант в случае ошибки округления
         }
     }
+    class WordFrequencyGenerator
+    {
+        private Dictionary<string, double> wordFrequencies = new Dictionary<string, double>();
+        private Random random = new Random();
+
+        public WordFrequencyGenerator(string filePath)
+        {
+            LoadWordFrequencies(filePath);
+        }
+
+        private void LoadWordFrequencies(string filePath)
+        {
+            var lines = File.ReadAllLines(filePath).Skip(1); // Заголовки пропускаем
+            foreach (var line in lines)
+            {
+                //Console.WriteLine(line);
+                var parts = line.Split(';');
+                //Console.WriteLine(parts.Length);
+                if (parts.Length == 4)
+                {
+                    string word = parts[1];
+                    double frequency = double.Parse(parts[2]);
+                    wordFrequencies[word] = frequency;
+                }
+            }
+        }
+
+        public string GenerateText(int length)
+        {
+            if (wordFrequencies.Count == 0) return string.Empty;
+
+            var words = wordFrequencies.Keys.ToList();
+            var outputText = new List<string>();
+
+            for (int i = 0; i < length; i++)
+            {
+                string nextWord = GetWeightedRandomWord(words);
+                outputText.Add(nextWord);
+            }
+            //Console.WriteLine(outputText.ToString());
+
+            return string.Join(" ", outputText);
+        }
+
+        private string GetWeightedRandomWord(List<string> words)
+        {
+            double totalWeight = wordFrequencies.Sum(wf => wf.Value);
+            double randomWeight = random.Next(Convert.ToInt32(totalWeight));
+            double currentWeight = 0;
+
+            foreach (var word in words)
+            {
+                currentWeight += wordFrequencies[word];
+                if (randomWeight < currentWeight)
+                {
+                    return word;
+                }
+            }
+
+            return words.Last(); // Резервный вариант для ошибок округления
+        }
+    }
 
     class Program
     {
@@ -121,7 +183,13 @@ namespace generator
             string generatedText = bigramGenerator.GenerateText(1000);
 
             File.WriteAllText("generated_bigram_text.txt", generatedText);
-            Console.WriteLine("Текст сгенерирован и сохранен в generated_bigram_text.txt");
+            Console.WriteLine("Текст сгенерирован с помощью биграм и сохранен в generated_bigram_text.txt");
+
+            // Генерация текста на основе частотных свойств слов
+            WordFrequencyGenerator wordFrequencyGenerator = new WordFrequencyGenerator("./ruscorpora_content.csv");
+            string wordFrequencyText = wordFrequencyGenerator.GenerateText(1000);
+            File.WriteAllText("generated_word_frequency_text.txt", wordFrequencyText);
+            Console.WriteLine("Текст сгенерирован с помощью частотности слов и сохранен в generated_word_frequency_text.txt");
 
         }
     }

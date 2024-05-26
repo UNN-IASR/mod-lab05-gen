@@ -27,15 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProjCharGenerator",
+              "Title": "ProjCharGenerator.csproj",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\\u041C\u0418\u041F\u0421 \u043B\u0430\u0431\u044B\\5\\mod-lab05-gen\\ProjCharGenerator\\ProjCharGenerator.csproj",
               "RelativeDocumentMoniker": "ProjCharGenerator\\ProjCharGenerator.csproj",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\\u041C\u0418\u041F\u0421 \u043B\u0430\u0431\u044B\\5\\mod-lab05-gen\\ProjCharGenerator\\ProjCharGenerator.csproj",
               "RelativeToolTip": "ProjCharGenerator\\ProjCharGenerator.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-26T15:16:48.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-26T15:16:48.362Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "ProjCharGenerator\\Program.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\\u041C\u0418\u041F\u0421 \u043B\u0430\u0431\u044B\\5\\mod-lab05-gen\\ProjCharGenerator\\Program.cs",
               "RelativeToolTip": "ProjCharGenerator\\Program.cs",
-              "ViewState": "AQIAAGgAAAAAAAAAAAD8v3sAAAA+AAAA",
+              "ViewState": "AQIAAKwAAAAAAAAAAAApwLMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-26T15:01:58.605Z",
               "EditorCaption": ""
