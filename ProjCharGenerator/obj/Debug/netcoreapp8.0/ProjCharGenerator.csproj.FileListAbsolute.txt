@@ -1,0 +1,15 @@
+C:\Users\Admin\source\repos\МИПС лабы\5\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp8.0\ProjCharGenerator.exe
+C:\Users\Admin\source\repos\МИПС лабы\5\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp8.0\ProjCharGenerator.deps.json
+C:\Users\Admin\source\repos\МИПС лабы\5\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp8.0\ProjCharGenerator.runtimeconfig.json
+C:\Users\Admin\source\repos\МИПС лабы\5\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp8.0\ProjCharGenerator.dll
+C:\Users\Admin\source\repos\МИПС лабы\5\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp8.0\ProjCharGenerator.pdb
+C:\Users\Admin\source\repos\МИПС лабы\5\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjCharGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\МИПС лабы\5\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjCharGenerator.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\МИПС лабы\5\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjCharGenerator.AssemblyInfo.cs
+C:\Users\Admin\source\repos\МИПС лабы\5\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjCharGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\МИПС лабы\5\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjCharGenerator.sourcelink.json
+C:\Users\Admin\source\repos\МИПС лабы\5\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjCharGenerator.dll
+C:\Users\Admin\source\repos\МИПС лабы\5\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\refint\ProjCharGenerator.dll
+C:\Users\Admin\source\repos\МИПС лабы\5\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjCharGenerator.pdb
+C:\Users\Admin\source\repos\МИПС лабы\5\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ProjCharGenerator.genruntimeconfig.cache
+C:\Users\Admin\source\repos\МИПС лабы\5\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp8.0\ref\ProjCharGenerator.dll
