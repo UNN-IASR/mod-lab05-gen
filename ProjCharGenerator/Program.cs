@@ -21,7 +21,7 @@ namespace generator
            return data[random.Next(0, size)]; 
         }
     }
-    class BigramGenerator
+    public class BigramGenerator
     {
         private Dictionary<char, List<(char, int)>> bigrams = new Dictionary<char, List<(char, int)>>();
         private Random random = new Random();
@@ -94,7 +94,7 @@ namespace generator
             return charWeights.Last().Item1; // Резервный вариант в случае ошибки округления
         }
     }
-    class WordFrequencyGenerator
+    public class WordFrequencyGenerator
     {
         private Dictionary<string, double> wordFrequencies = new Dictionary<string, double>();
         private Random random = new Random();
@@ -182,13 +182,13 @@ namespace generator
             //Console.WriteLine(bigramGenerator.bigrams.Values.ToString());
             string generatedText = bigramGenerator.GenerateText(1000);
 
-            File.WriteAllText("generated_bigram_text.txt", generatedText);
+            File.WriteAllText("gen-1.txt", generatedText);
             Console.WriteLine("Текст сгенерирован с помощью биграм и сохранен в generated_bigram_text.txt");
 
             // Генерация текста на основе частотных свойств слов
             WordFrequencyGenerator wordFrequencyGenerator = new WordFrequencyGenerator("./ruscorpora_content.csv");
             string wordFrequencyText = wordFrequencyGenerator.GenerateText(1000);
-            File.WriteAllText("generated_word_frequency_text.txt", wordFrequencyText);
+            File.WriteAllText("gen-2.txt", wordFrequencyText);
             Console.WriteLine("Текст сгенерирован с помощью частотности слов и сохранен в generated_word_frequency_text.txt");
 
         }
