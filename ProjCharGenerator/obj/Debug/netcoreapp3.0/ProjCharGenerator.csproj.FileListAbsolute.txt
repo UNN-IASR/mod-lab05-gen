@@ -1,0 +1,14 @@
+C:\Users\PC\Source\Repos\Rudimix\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.exe
+C:\Users\PC\Source\Repos\Rudimix\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.deps.json
+C:\Users\PC\Source\Repos\Rudimix\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.runtimeconfig.json
+C:\Users\PC\Source\Repos\Rudimix\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.runtimeconfig.dev.json
+C:\Users\PC\Source\Repos\Rudimix\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.dll
+C:\Users\PC\Source\Repos\Rudimix\mod-lab05-gen\ProjCharGenerator\bin\Debug\netcoreapp3.0\ProjCharGenerator.pdb
+C:\Users\PC\Source\Repos\Rudimix\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.csproj.AssemblyReference.cache
+C:\Users\PC\Source\Repos\Rudimix\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Source\Repos\Rudimix\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.AssemblyInfoInputs.cache
+C:\Users\PC\Source\Repos\Rudimix\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.AssemblyInfo.cs
+C:\Users\PC\Source\Repos\Rudimix\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.csproj.CoreCompileInputs.cache
+C:\Users\PC\Source\Repos\Rudimix\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.dll
+C:\Users\PC\Source\Repos\Rudimix\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.pdb
+C:\Users\PC\Source\Repos\Rudimix\mod-lab05-gen\ProjCharGenerator\obj\Debug\netcoreapp3.0\ProjCharGenerator.genruntimeconfig.cache
