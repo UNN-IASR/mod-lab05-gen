@@ -9,15 +9,13 @@ namespace ProjCharGenerator
 {
     public class WordGenerator
     {
-        SortedDictionary<string, int> stat;
+        public SortedDictionary<string, int> stat;
 
-        Int64 sum;
+        public Int64 sum;
 
-        public WordGenerator()
+        public WordGenerator(string path)
         {
             stat = new SortedDictionary<string, int>();
-
-            string path = "../../../freqwords.txt";
 
             // асинхронное чтение
             using (StreamReader reader = new StreamReader(path, Encoding.UTF8))
