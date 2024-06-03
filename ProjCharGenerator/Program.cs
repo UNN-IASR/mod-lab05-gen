@@ -1,17 +1,16 @@
-﻿﻿using System;
-
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace generator
 {
-    class CharGenerator
+    class BiGrammGenerator 
     {
         private string syms = "абвгдежзийклмнопрстуфхцчшщыьэюя";
         private char[] data;
         private int size;
-        private int index = 0;
         private Random random = new Random();
-        int[,] weights = new int[,] {
+        int[,] weights = new int[31,31] {
         {2, 12, 35, 8,14,7,6,15,7,7,19,27,19,45,5,11,26,31,27,3,1,10,6,7,10,1,0,0,2,6,9 },
         {5,0,0,0,0,9,1,0,6,0,0,6,0,2,21,0,8,1,0,6,0,0,0,0,0,1,11,0,0,0,2},
         {35,1,5,3,3,32,0,2,17,0,7,10,3,9,58,6,6,19,6,7,0,1,1,2,4,1,18,1,2,0,3},
@@ -44,58 +43,49 @@ namespace generator
         {0,2,1,2,1,0,0,3,1,0,1,0,1,1,1,3,1,1,7,0,0,0,1,1,0,4,0,0,0,0,0 },
         {1,3,9,1,3,3,1,5,3,2,3,3,4,6,3,6,3,6,10,0,0,2,1,4,1,1,0,0,1,1,1 }
         };
-
-        int[] np;
-        int summa = 0;
-        public CharGenerator()
+        public BiGrammGenerator() 
         {
-            size = syms.Length;
-            if (size != weights.GetLength(0))
-            {
-                Console.WriteLine("Error!");
-                Environment.Exit(1);
-            }
-            data = syms.ToCharArray();
-
+           size = syms.Length;
+           data = syms.ToCharArray(); 
         }
-        public char getSym()
+        public char getSym() 
         {
-            summa = 0;
+            int index = 0;
+            int summ = 0;
+            int[] np = new int[size];
             int[] temp = new int[size];
             for (int i = 0; i < size; i++)
-                temp[i] = weights[index, i];
-
-            for (int i = 0; i < size; i++)
-                summa += temp[i];
-            np = new int[size];
-            int s2 = 0;
-            for (int i = 0; i < size; i++)
             {
-                s2 += temp[i];
-                np[i] = s2;
+                temp[i] = weights[index, i];
+                summ += temp[i];
+                np[i] = summ;
             }
-            int m = random.Next(0, summa);
-            int j;
-            for (j = 0; j < size; j++)
+            int m = random.Next(0, summ);
+            for (int j = 0; j < size; j++)
             {
                 if (m < np[j])
+                {
+                    index = j;
                     break;
+                }  
             }
-            index = j;
-            return data[j];
+            return data[index];
         }
     }
-
-    class CharGenerator1
+    class WordGenerator
     {
-        private string syms = "и в не на я он быть что с а как то она к этот это по но они мы свой который из весь у за от о так же вы для мочь ты год один его тот человек всё только такой бы себя сказать ещё мой или говорить до время уже когда другой наш да если знать вот сам ни день дело при стать чтобы самый жизнь очень нет во даже два рука её первый ли под со кто где новый слово какой раз теперь их идти без после иметь там ничто должен большой видеть место хотеть можно глаз";
+        private string syms = "и в не на я он быть что с а как то она к этот это по но они мы свой который" +
+            " из весь у за от о так же вы для мочь ты год один его тот человек всё только такой бы себя" +
+            " сказать ещё мой или говорить до время уже когда другой наш да если знать вот сам ни день" +
+            " дело при стать чтобы самый жизнь очень нет во даже два рука её первый ли под со кто где" +
+            " новый слово какой раз теперь их идти без после иметь там ничто должен большой видеть" +
+            " место хотеть можно глаз";
         private string[] data;
         private int size;
-        //private int index = 0;
         private Random random = new Random();
         int[] weights = new int[] {
             38310, 30273, 17480, 15322,13348,13213,12935,12485,11360,7518,
-            6691, 6038, 5949, 5835, 5633, 5600, 5579, 5507, 5116, 4734, 
+            6691, 6038, 5949, 5835, 5633, 5600, 5579, 5507, 5116, 4734,
             4589, 4548, 4457, 4315, 4198, 3971, 3920, 3636, 3625, 3463,
             3106, 3071, 3043, 2987, 2969, 2965, 2947, 2927, 2896, 2819,
             2638, 2571, 2532, 2499, 2457, 2402, 2182, 2156, 2139, 2120,
@@ -104,49 +94,49 @@ namespace generator
             1384, 1373, 1362, 1312, 1297, 1275, 1214, 1175, 1173, 1167,
             1163, 1151, 1141, 1135, 1117, 1077, 1073, 1073, 1066, 1055,
             1052, 1040, 1036, 1009, 1004, 1000, 988, 985, 966, 958
-
         };
-
-        int[] np;
-        int summa = 0;
-        public CharGenerator1()
+        public WordGenerator()
         {
             data = syms.Split(" ");
             size = data.Length;
-            if (size != weights.Length)
-            {
-                Console.WriteLine("Error!");
-                Environment.Exit(1);
-            }
-            for (int i = 0; i < size; i++)
-                summa += weights[i];
-            np = new int[size];
-            int s2 = 0;
-            for (int i = 0; i < size; i++)
-            {
-                s2 += weights[i];
-                np[i] = s2;
-            }
         }
         public string getSym()
         {
-            int m = random.Next(0, summa);
-            int j;
-            for (j = 0; j < size; j++)
+            int index = 0;
+            int summ = 0;
+            int[] np = new int[size];
+            int[] temp = new int[size];
+            for (int i = 0; i < size; i++)
+            {
+                temp[i] = weights[i];
+                summ += temp[i];
+                np[i] = summ;
+            }
+            int m = random.Next(0, summ);
+            for (int j = 0; j < size; j++)
             {
                 if (m < np[j])
+                {
+                    index = j;
                     break;
+                }
             }
-            return data[j];
+            return data[index];
         }
     }
-
-    class CharGenerator2
+    class PairWordGenerator
     {
-        private string syms = "и не,и в,потому что,я не,у меня,может быть,то что,что он,не было,в том,у нас,в этом,у него,что в,не только,том что,что я,и на,гичего не,так и,и с,он не,и я,о том,и все,но и,с ним,а в,так как,что это,как бы,все это,как и,да и,вместе с,не в,то есть,и что,и он,никогда не,к нему,не может,если бы,а я,так что,он был,а не,об этом,и даже,что не,это не,еще не,но не,и как,не мог,из них,не знаю,на него,в нем,а потом,что же,в то,при этом,уже не,в его,это было,во время,что она,того что,как будто,то же,но в,как в,ко мне,так же,а также,и по,что у,у них,и ты,и так,и вот,один из,никто не,в москве,и его,у вас,к тому,не могу,в конце,что вы,но я,что они,я и,только в,его в,таким образом,что и,в россии,несмотря на";
+        private string syms = "и не,и в,потому что,я не,у меня,может быть,то что,что он,не было," +
+            "в том,у нас,в этом,у него,что в,не только,том что,что я,и на,гичего не,так и,и с," +
+            "он не,и я,о том,и все,но и,с ним,а в,так как,что это,как бы,все это,как и,да и," +
+            "вместе с,не в,то есть,и что,и он,никогда не,к нему,не может,если бы,а я,так что," +
+            "он был,а не,об этом,и даже,что не,это не,еще не,но не,и как,не мог,из них,не знаю," +
+            "на него,в нем,а потом,что же,в то,при этом,уже не,в его,это было,во время,что она," +
+            "того что,как будто,то же,но в,как в,ко мне,так же,а также,и по,что у,у них,и ты," +
+            "и так,и вот,один из,никто не,в москве,и его,у вас,к тому,не могу,в конце,что вы," +
+            "но я,что они,я и,только в,его в,таким образом,что и,в россии,несмотря на";
         private string[] data;
         private int size;
-       // private int index = 0;
         private Random random = new Random();
         int[] weights = new int[] {
             201352, 193983, 117401, 113767, 97102, 96065, 95251, 92743, 92729, 89842,
@@ -161,95 +151,87 @@ namespace generator
             32428, 31972, 31330, 31004, 30819, 30782, 30278, 30274, 29973, 29741
 
         };
-        int[] np;
-        int summa = 0;
-        public CharGenerator2()
+        public PairWordGenerator()
         {
             data = syms.Split(",");
             size = data.Length;
-            if (size != weights.Length)
-            {
-                Console.WriteLine("Error!");
-                Environment.Exit(1);
-            }
-            for (int i = 0; i < size; i++)
-                summa += weights[i];
-            np = new int[size];
-            int s2 = 0;
-            for (int i = 0; i < size; i++)
-            {
-                s2 += weights[i];
-                np[i] = s2;
-            }
         }
         public string getSym()
         {
-            int m = random.Next(0, summa);
-            int j;
-            for (j = 0; j < size; j++)
+            int index = 0;
+            int summ = 0;
+            int[] np = new int[size];
+            int[] temp = new int[size];
+            for (int i = 0; i < size; i++)
+            {
+                temp[i] = weights[i];
+                summ += temp[i];
+                np[i] = summ;
+            }
+            int m = random.Next(0, summ);
+            for (int j = 0; j < size; j++)
             {
                 if (m < np[j])
+                {
+                    index = j;
                     break;
+                }
             }
-            return data[j];
+            return data[index];
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            StreamWriter f = new StreamWriter("exemple1.txt");
+            StreamWriter BiGramm = new StreamWriter("BiGramm.txt");
             string temp = "";
-            CharGenerator gen = new CharGenerator();
+            BiGrammGenerator Bgen = new BiGrammGenerator();
             for (int i = 0; i < 1000; i++)
             {
-                char ch = gen.getSym();
-                temp += ch + " ";
-               
-                if ((i+1) % 30 == 0 )
-                {
-                    f.WriteLine(temp);
-                    temp = "";
-                }     
-            }
-            f.WriteLine(temp);
-            f.Close();
-            StreamWriter f2 = new StreamWriter("exemple2.txt");
-            temp = "";
-            CharGenerator1 gen2 = new CharGenerator1();
+                char ch = Bgen.getSym();
+                temp += ch;
 
-            for (int i = 0; i < 1000; i++)
-            {
-                string ch = gen2.getSym();
-                temp += ch + " ";
-
-                if ((i + 1) % 30 == 0)
+                if ((i + 1) % 40 == 0)
                 {
-                    f2.WriteLine(temp);
+                    BiGramm.WriteLine(temp);
                     temp = "";
                 }
             }
-            f2.WriteLine(temp);
-            f2.Close();
-            StreamWriter f3 = new StreamWriter("exemple3.txt");
+            BiGramm.WriteLine(temp);
+            BiGramm.Close();
+            StreamWriter Word = new StreamWriter("Word.txt");
             temp = "";
-            CharGenerator2 gen3 = new CharGenerator2();
-
+            WordGenerator Wgen = new WordGenerator();
             for (int i = 0; i < 1000; i++)
             {
-                string ch = gen3.getSym();
-                temp += ch + " ";
+                string word = Wgen.getSym();
+                temp += word+" ";
 
                 if ((i + 1) % 30 == 0)
                 {
-                    f3.WriteLine(temp);
+                    Word.WriteLine(temp);
                     temp = "";
                 }
-
             }
-            f3.WriteLine(temp);
-            f3.Close();
-            
+            Word.WriteLine(temp);
+            Word.Close();
+            StreamWriter PWords = new StreamWriter("PairWords.txt");
+            temp = "";
+            PairWordGenerator PWgen = new PairWordGenerator();
+            for (int i = 0; i < 1000; i++)
+            {
+                string words = PWgen.getSym();
+                temp += words + " ";
+
+                if ((i + 1) % 20 == 0)
+                {
+                    PWords.WriteLine(temp);
+                    temp = "";
+                }
+            }
+            PWords.WriteLine(temp);
+            PWords.Close();
         }
     }
 }
