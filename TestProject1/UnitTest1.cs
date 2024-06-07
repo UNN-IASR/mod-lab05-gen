@@ -10,7 +10,7 @@ namespace TestProject1
         public void Test_1_1()
         {
             CharGenerator CG = new CharGenerator();
-            string alf = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя";
+            string alf = "Р°Р±РІРіРґРµС‘Р¶Р·РёР№РєР»РјРЅРѕРїСЂСЃС‚СѓС„С…С†С‡С€С‰СЊС‹СЉСЌСЋСЏ";
 
             for (int i = 0; i < 100; i++)
             {
@@ -32,7 +32,7 @@ namespace TestProject1
         public void Test_2_1()
         {
             Generator_BIGRAMM BI = new Generator_BIGRAMM();
-            string alf = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя";
+            string alf = "Р°Р±РІРіРґРµС‘Р¶Р·РёР№РєР»РјРЅРѕРїСЂСЃС‚СѓС„С…С†С‡С€С‰СЊС‹СЉСЌСЋСЏ";
             Assert.IsFalse(!alf.Contains(BI.GenerateNextSymbol(' ')));
         }
 
@@ -48,14 +48,14 @@ namespace TestProject1
         {
             WordGenerator gW2 = new WordGenerator();
 
-            Assert.IsTrue(!gW2.frequentWordsList.Contains("кровать"));
+            Assert.IsTrue(!gW2.frequentWordsList.Contains("РєСЂРѕРІР°С‚СЊ"));
         }
 
         [TestMethod]
         public void Test_3_2()
         {
             WordGenerator gW2 = new WordGenerator();
-            Assert.AreEqual(gW2.frequentWordsList[1], "в");
+            Assert.AreEqual(gW2.frequentWordsList[1], "РІ");
         }
         
     }
