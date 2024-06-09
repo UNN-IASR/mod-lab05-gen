@@ -10,7 +10,7 @@ namespace UnitTests
         {
             CharGenerator generator = new CharGenerator();
             char symbol = generator.getSym();
-            Assert.IsTrue("àáâãäå¸æçèéêëìíîïðñòóôõö÷øùüûúýþÿ".Contains(symbol.ToString()));
+            Assert.IsTrue("абвгдеёжзиклмнопрстуфхцчшщъыьэюя".Contains(symbol.ToString()));
         }
 
         [TestMethod]
