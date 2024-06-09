@@ -2,7 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace generator
 {
     [TestClass]
-    public class UnitTest1
+    public class lab5
     {
         [TestMethod]
         public void TestConstructingFromInnerData()
