@@ -5,53 +5,54 @@ namespace lab5
     public class UnitTests
     {
         [TestMethod]
-        public void TestConstructingFromInnerData()
+        public void TestConstructing()
         {
-            string[] words = { "car", "bicycle", "motorcycle", "airplane" };
-            double[] values = { 0.1, 0.4, 0.7, 1.0 };
-            TextGenerator generator = new TextGenerator(words, values);
+            string[] letters = { "audi", "mazda", "bmw", "lada" };
+            double[] val = { 0.05, 0.04, 0.07, 0.01 };
+            TextGenerator generator = new TextGenerator(letters, val);
             Assert.IsNotNull(generator);
         }
 
         [TestMethod]
-        public void TestCharGenerator()
+        public void TestChar()
         {
-            CharGenerator generator = new CharGenerator();
-            char symbol = generator.getSum();
-            Assert.IsTrue("абвгдеёжзийклмнопрстуфхцчшщъыьэюя".Contains(symbol.ToString()));
+            CharGenerator gen = new CharGenerator();
+            char s = gen.getSum();
+            Assert.IsTrue("абвгдеёжзийклмнопрстуфхцчшщъыьэюя".Contains(s.ToString()));
         }
 
         [TestMethod]
-        public void TestCharGenerator2()
+        public void TestChar2()
         {
-            CharGenerator generator = new CharGenerator();
-            char symbol = generator.getSum();
-            Assert.IsFalse("abcdefghijklmnopqrstuvwxyz".Contains(symbol.ToString()));
+            CharGenerator gen = new CharGenerator();
+            char s = gen.getSum();
+            Assert.IsFalse("abcdefghijklmnopqrstuvwxyz".Contains(s.ToString()));
         }
 
         [TestMethod]
-        public void TestConstructingFromFile()
+        public void TestFromFile()
         {
-            TextGenerator generator = new TextGenerator();
-            generator.FileLoading("../../../../Data1.txt");
-            Assert.IsNotNull(generator);
+            TextGenerator gen = new TextGenerator();
+            gen.FileLoading("../../../../Data1.txt");
+            Assert.IsNotNull(gen);
         }
 
         [TestMethod]
         public void Test()
         {
-            TextGenerator generator = new TextGenerator();
-            generator.FileLoading("../../../../Data2.txt");
-            Assert.IsNotNull(generator);
+            TextGenerator gen = new TextGenerator();
+            gen.FileLoading("../../../../Data2.txt");
+            Assert.IsNotNull(gen);
         }
 
         [TestMethod]
         public void LastTest()
         {
-            string[] words = { "a", "b", "c"};
-            double[] values = { 0.02, 0.05, 0.05};
-            TextGenerator generator = new TextGenerator(words, values);
-            Assert.IsNotNull(generator);
+            string[] letters = { "a", "b", "c" };
+            double[] val = { 0.02, 0.05, 0.05 };
+            TextGenerator gen = new TextGenerator(letters, val);
+            Assert.IsNotNull(gen);
         }
     }
 }
+
