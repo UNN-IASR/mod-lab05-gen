@@ -25,7 +25,7 @@ namespace UnitTests
         public void TestFileLoadingThenSymulating()
         {
             TextGenerator generator = new TextGenerator();
-            generator.FileLoading("DataForGenerator1.txt");
+            generator.FileLoading("../../../../DataForGenerator1.txt");
             Assert.IsTrue(generator.getSym() != null);
         }
 
@@ -33,7 +33,7 @@ namespace UnitTests
         public void TestConstructingFromFile()
         {
             TextGenerator generator = new TextGenerator();
-            generator.FileLoading("DataForGenerator2.txt");
+            generator.FileLoading("../../../../DataForGenerator2.txt");
             Assert.IsNotNull(generator);
         }
 
