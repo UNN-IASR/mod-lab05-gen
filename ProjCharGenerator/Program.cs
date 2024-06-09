@@ -6,69 +6,69 @@ namespace lab5
 {
     public class CharGenerator
     {
-        private string syms = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя";
-        private char[] data;
-        private int size;
-        private Random random = new Random();
+        private string s = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя";
+        private char[] arr;
+        private int count;
+        private Random ran = new Random();
 
         public CharGenerator()
         {
-            size = syms.Length;
-            data = syms.ToCharArray();
+            count = s.Length;
+            arr = s.ToCharArray();
         }
 
         public char getSum()
         {
-            return data[random.Next(0, size)];
+            return arr[ran.Next(0, count)];
         }
     }
 
     public class TextGenerator
     {
-        private string[] words;
-        private double[] weightSum;
-        private Random random= new Random();
+        private string[] letters;
+        private double[] wS;
+        private Random ran = new Random();
 
         public TextGenerator() { }
 
-        public TextGenerator(string[] words, double[] values)
+        public TextGenerator(string[] w, double[] val)
         {
-            this.words = words;
-            weightSum = new double[words.Length];
-            weightSum[0] = values[0];
-            for (int i = 1; i < words.Length; i++)
+            this.letters = w;
+            wS = new double[w.Length];
+            wS[0] = val[0];
+            for (int i = 1; i < w.Length; i++)
             {
-                weightSum[i] = weightSum[i - 1] + values[i];
+                wS[i] = wS[i - 1] + val[i];
             }
         }
 
-        public void FileLoading(string filename)
+        public void FileLoading(string name)
         {
-            string[] lines = File.ReadAllLines(filename);
-            words = new string[lines.Length];
-            weightSum = new double[lines.Length];
-            string[] parseParts = lines[0].Split(' ');
-            words[0] = parseParts[0];
-            weightSum[0] = double.Parse(parseParts[1]);
+            string[] str = File.ReadAllLines(name);
+            letters = new string[str.Length];
+            wS = new double[str.Length];
+            string[] parseParts = str[0].Split(' ');
+            letters[0] = parseParts[0];
+            wS[0] = double.Parse(parseParts[1]);
 
-            for(int i = 1; i < lines.Length; i++)
+            for (int i = 1; i < str.Length; i++)
             {
-                parseParts = lines[i].Split(' ');
-                words[i] = parseParts[0];
-                weightSum[i] = weightSum[i - 1] + double.Parse(parseParts[1]);
+                parseParts = str[i].Split(' ');
+                letters[i] = parseParts[0];
+                wS[i] = wS[i - 1] + double.Parse(parseParts[1]);
             }
         }
 
         public string getSum()
         {
-            int size = weightSum.Length;
-            double value = random.NextDouble() * weightSum[size - 1];
+            int count = wS.Length;
+            double value = ran.NextDouble() * wS[count - 1];
 
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i < count; i++)
             {
-                if (value < weightSum[i])
+                if (value < wS[i])
                 {
-                    return words[i];
+                    return letters[i];
                 }
             }
             return null;
@@ -79,21 +79,20 @@ namespace lab5
     {
         static void Main(string[] args)
         {
-            CharGenerator gen = new CharGenerator();
-            SortedDictionary<char, int> stat = new SortedDictionary<char, int>();
+            CharGenerator gener = new CharGenerator();
+            SortedDictionary<char, int> stats = new SortedDictionary<char, int>();
 
-            for (int i = 0; i < 1000; i++)
+            for (int i = 0; i < 100; i++)
             {
-                char ch = gen.getSum();
-                if (stat.ContainsKey(ch))
-                    stat[ch]++;
+                char ch = gener.getSum();
+                if (stats.ContainsKey(ch))
+                    stats[ch]++;
                 else
-                    stat.Add(ch, 1);
+                    stats.Add(ch, 1);
                 Console.WriteLine(ch);
             }
-            Console.WriteLine("\n");
 
-            foreach (KeyValuePair<char, int> entry in stat)
+            foreach (KeyValuePair<char, int> entry in stats)
             {
                 Console.WriteLine("{0} - {1}", entry.Key, entry.Value / 1000.0);
             }
@@ -121,4 +120,3 @@ namespace lab5
         }
     }
 }
-
