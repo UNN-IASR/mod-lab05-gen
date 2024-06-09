@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-namespace generator
+using generator;
+namespace UnitTests
 {
     [TestClass]
     public class UnitTest1
@@ -9,7 +10,7 @@ namespace generator
         {
             CharGenerator generator = new CharGenerator();
             char symbol = generator.getSym();
-            Assert.IsTrue("àáâãäå¸æçèéêëìíîïğñòóôõö÷øùüûúışÿ".Contains(symbol.ToString()));
+            Assert.IsTrue("Ã Ã¡Ã¢Ã£Ã¤Ã¥Â¸Ã¦Ã§Ã¨Ã©ÃªÃ«Ã¬Ã­Ã®Ã¯Ã°Ã±Ã²Ã³Ã´ÃµÃ¶Ã·Ã¸Ã¹Ã¼Ã»ÃºÃ½Ã¾Ã¿".Contains(symbol.ToString()));
         }
 
         [TestMethod]
