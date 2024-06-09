@@ -9,7 +9,7 @@ namespace ProjCharGenerator
 {
     public class BigrammWord : Generator
     {
-        string path = "C:\\Users\\Mikhail Borodin\\Source\\Repos\\CSB201\\mod-lab05-gen\\ProjCharGenerator\\source\\words.txt";
+        string path = "sourse/words.txt";
 
         string[] items;
         int[] weights;
