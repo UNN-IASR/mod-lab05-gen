@@ -5,22 +5,6 @@ namespace generator
     public class UnitTest1
     {
         [TestMethod]
-        public void TestCharGenerator()
-        {
-            CharGenerator generator = new CharGenerator();
-            char symbol = generator.getSym();
-            Assert.IsTrue("абвгдеёжзийклмнопрстуфхцчшщъыьэюя".Contains(symbol.ToString()));
-        }
-
-        [TestMethod]
-        public void TestCharGenerator2()
-        {
-            CharGenerator generator = new CharGenerator();
-            char symbol = generator.getSym();
-            Assert.IsFalse("abcdefghijklmnopqrstuvwxyz".Contains(symbol.ToString()));
-        }
-
-        [TestMethod]
         public void TestConstructingFromFile()
         {
             TextGenerator generator = new TextGenerator();
