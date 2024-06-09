@@ -37,5 +37,21 @@ namespace generator
             Assert.IsNotNull(generator);
         }
 
+        [TestMethod]
+        public void Test()
+        {
+            TextGenerator generator = new TextGenerator();
+            generator.Data_loading("../../../../Data2.txt");
+            Assert.IsNotNull(generator);
+        }
+        
+        [TestMethod]
+        public void LastTest()
+        {
+            string[] words = { "a", "b", "c"};
+            double[] values = { 0.02, 0.05, 0.05};
+            TextGenerator generator = new TextGenerator(words, values);
+            Assert.IsNotNull(generator);
+        }
     }
 }
