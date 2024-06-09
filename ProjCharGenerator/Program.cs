@@ -4,22 +4,6 @@ using System.IO;
 
 namespace generator
 {
-    public class Generator_char
-    {
-        private string syms = "абвгдёежзийклмнопростуфхцчшщъыьэюя";
-        private char[] data;
-        private int size;
-        private Random random = new Random();
-        public Generator_char()
-        {
-            size = syms.Length;
-            data = syms.ToCharArray();
-        }
-        public char Get_symb()
-        {
-            return data[random.Next(0, size)];
-        }
-    }
 
     public class Generator_text
     {
@@ -73,6 +57,23 @@ namespace generator
         }
     }
 
+    public class Generator_char
+    {
+        private string syms = "абвгдёежзийклмнопростуфхцчшщъыьэюя";
+        private char[] data;
+        private int size;
+        private Random random = new Random();
+        public Generator_char()
+        {
+            size = syms.Length;
+            data = syms.ToCharArray();
+        }
+        public char Get_symb()
+        {
+            return data[random.Next(0, size)];
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -102,6 +103,7 @@ namespace generator
                 result_1 += generator.Get_symb();
             }
             File.WriteAllText("gen_1.txt", result_1, System.Text.Encoding.UTF8);
+
             generator.Data_loading("Data_2.txt");
             for (int i = 0; i < 1000; i++)
             {
