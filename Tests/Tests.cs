@@ -1,8 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-namespace generator
+namespace lab5
 {
     [TestClass]
-    public class lab5
+    public class UnitTests
     {
         [TestMethod]
         public void TestConstructingFromInnerData()
