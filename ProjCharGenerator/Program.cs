@@ -23,7 +23,7 @@ namespace generator
             Console.WriteLine("\nGenerated sequence of words: ");
             Console.WriteLine(wordStr);
 
-            string pathSave = "result\\";
+            string pathSave = "../../../../../";
             FileSave(pathSave + "gen-1.txt", charStr);
             FileSave(pathSave + "gen-2.txt", wordStr);
 
