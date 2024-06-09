@@ -17,7 +17,7 @@ namespace lab5
         public void TestCharGenerator()
         {
             CharGenerator generator = new CharGenerator();
-            char symbol = generator.getSym();
+            char symbol = generator.getSum();
             Assert.IsTrue("абвгдеёжзийклмнопрстуфхцчшщъыьэюя".Contains(symbol.ToString()));
         }
 
@@ -25,7 +25,7 @@ namespace lab5
         public void TestCharGenerator2()
         {
             CharGenerator generator = new CharGenerator();
-            char symbol = generator.getSym();
+            char symbol = generator.getSum();
             Assert.IsFalse("abcdefghijklmnopqrstuvwxyz".Contains(symbol.ToString()));
         }
 
