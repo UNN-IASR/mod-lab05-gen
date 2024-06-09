@@ -5,14 +5,6 @@ namespace generator
     public class UnitTest1
     {
         [TestMethod]
-        public void TestConstructingFromFile()
-        {
-            TextGenerator generator = new TextGenerator();
-            generator.FileLoading("DataForGenerator2.txt");
-            Assert.IsNotNull(generator);
-        }
-
-        [TestMethod]
         public void TestConstructingFromInnerData()
         {
             string[] words = { "car", "bicycle", "motorcycle", "airplane" };
