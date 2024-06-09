@@ -1,59 +1,60 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 namespace generator
 {
     [TestClass]
     public class UnitTest1
     {
         [TestMethod]
-        public void TestCharGenerator()
+        public void Test1()
         {
-            CharGenerator generator = new CharGenerator();
-            char symbol = generator.getSym();
+            Generator_char generator = new Generator_char();
+            char symbol = generator.Get_symb();
             Assert.IsTrue("абвгдеёжзийклмнопрстуфхцчшщъыьэюя".Contains(symbol.ToString()));
         }
 
         [TestMethod]
-        public void TestCharGenerator2()
+        public void Test2()
         {
-            CharGenerator generator = new CharGenerator();
-            char symbol = generator.getSym();
+            Generator_char generator = new Generator_char();
+            char symbol = generator.Get_symb();
             Assert.IsFalse("abcdefghijklmnopqrstuvwxyz".Contains(symbol.ToString()));
         }
 
         [TestMethod]
-        public void TestFileLoadingThenSymulating()
+        public void Test3()
         {
-            TextGenerator generator = new TextGenerator();
-            generator.FileLoading("../../../../Data1.txt");
-            Assert.IsTrue(generator.getSym() != null);
-        }
-
-        [TestMethod]
-        public void TestConstructingFromFile()
-        {
-            TextGenerator generator = new TextGenerator();
-            generator.FileLoading("../../../../Data2.txt");
+            Generator_text generator = new Generator_text();
+            generator.Data_loading("../../../../Data1.txt");
             Assert.IsNotNull(generator);
         }
 
         [TestMethod]
-        public void TestConstructingFromInnerData()
+        public void Test4()
         {
-            string[] words = { "car", "bicycle", "motorcycle", "airplane" };
-            double[] values = { 0.1, 0.4, 0.7, 1.0 };
-            TextGenerator generator = new TextGenerator(words, values);
+            Generator_text generator = new Generator_text();
+            generator.Data_loading("../../../../Data2.txt");
             Assert.IsNotNull(generator);
         }
 
         [TestMethod]
-        public void TestGetSymMethod()
+        public void Test5()
         {
-            string[] words = { "a", "b", "c", "d", "e", "f" };
-            double[] values = { 0.1, 0.2, 0.3, 0.6, 0.8, 1.0 };
-            TextGenerator generator = new TextGenerator(words, values);
+            string[] words = { "a", "b", "c", "d", "e"};
+            double[] values = { 0.1, 0.2, 0.3, 0.4, 0.5};
+            Generator_text generator = new Generator_text(words, values);
 
-            string sym = generator.getSym();
-            Assert.IsTrue(sym == "a" || sym == "b" || sym == "c" || sym == "d" || sym == "e" || sym == "f");
+            string sym = generator.Get_symb();
+            Assert.IsTrue(sym == "a" || sym == "b" || sym == "c" || sym == "d" || sym == "e");
+        }
+
+        [TestMethod]
+        public void Test6()
+        {
+            string[] words = { "word_1", "word_2", "word_3"};
+            double[] values = { 0.1, 0.3, 0.5};
+            Generator_text generator = new Generator_text(words, values);
+            Assert.IsNotNull(generator);
         }
     }
 }
