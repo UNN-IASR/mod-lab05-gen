@@ -1,45 +1,46 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Threading;
+using System.Threading.Tasks;
+using ProjCharGenerator;
 
 namespace generator
 {
-    class CharGenerator 
-    {
-        private string syms = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя"; 
-        private char[] data;
-        private int size;
-        private Random random = new Random();
-        public CharGenerator() 
-        {
-           size = syms.Length;
-           data = syms.ToCharArray(); 
-        }
-        public char getSym() 
-        {
-           return data[random.Next(0, size)]; 
-        }
-    }
     class Program
     {
         static void Main(string[] args)
         {
-            CharGenerator gen = new CharGenerator();
-            SortedDictionary<char, int> stat = new SortedDictionary<char, int>();
-            for(int i = 0; i < 1000; i++) 
+            Generator genChar = new BigrammChar();
+            Generator genWord = new BigrammWord();
+
+            string charStr = genChar.GetText(1000);
+            string wordStr = genWord.GetText(1000);
+
+            Console.WriteLine("Generated sequence of letters: ");
+            Console.WriteLine(charStr);
+
+            Console.WriteLine("\nGenerated sequence of words: ");
+            Console.WriteLine(wordStr);
+
+            string pathSave = "../../../../../";
+            FileSave(pathSave + "gen-1.txt", charStr);
+            FileSave(pathSave + "gen-2.txt", wordStr);
+
+            Console.ReadLine();
+        }
+
+        static void FileSave(string path, string text)
+        {
+            if (!File.Exists(path))
             {
-               char ch = gen.getSym(); 
-               if (stat.ContainsKey(ch))
-                  stat[ch]++;
-               else
-                  stat.Add(ch, 1); Console.Write(ch);
+                var file = File.Create(path);
+                file.Close();
             }
-            Console.Write('\n');
-            foreach (KeyValuePair<char, int> entry in stat) 
-            {
-                 Console.WriteLine("{0} - {1}",entry.Key,entry.Value/1000.0); 
-            }
-            
+
+            StreamWriter sw = new StreamWriter(path);
+            sw.WriteLine(text);
+            sw.Close();
         }
     }
 }
-
