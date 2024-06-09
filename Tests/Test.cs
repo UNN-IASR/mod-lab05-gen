@@ -41,7 +41,7 @@ namespace generator
         public void Test()
         {
             TextGenerator generator = new TextGenerator();
-            generator.Data_loading("../../../../Data2.txt");
+            generator.FileLoading("../../../../Data2.txt");
             Assert.IsNotNull(generator);
         }
         
