@@ -4,7 +4,7 @@ using System.IO;
 
 namespace generator
 {
-    class CharGenerator 
+    public class CharGenerator 
     {
         private string syms = "абвгдеёжзийклмнопрстуфхцчшщьыъэюя"; 
         private char[] data;
