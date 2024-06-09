@@ -33,7 +33,7 @@ namespace generator
         public void TestConstructingFromFile()
         {
             TextGenerator generator = new TextGenerator();
-            generator.FileLoading("Data1.txt");
+            generator.FileLoading("../../../../Data1.txt");
             Assert.IsNotNull(generator);
         }
 
