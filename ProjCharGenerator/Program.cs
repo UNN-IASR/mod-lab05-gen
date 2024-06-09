@@ -23,7 +23,7 @@ namespace generator
             Console.WriteLine("\nGenerated sequence of words: ");
             Console.WriteLine(wordStr);
 
-            string pathSave = "C:\\Users\\Mikhail Borodin\\Source\\Repos\\CSB201\\mod-lab05-gen\\ProjCharGenerator\\result\\";
+            string pathSave = "result\\";
             FileSave(pathSave + "gen-1.txt", charStr);
             FileSave(pathSave + "gen-2.txt", wordStr);
 
